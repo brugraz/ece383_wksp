@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity hw3 is
-    Port ( d : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( d : in unsigned (7 downto 0);
            h : out STD_LOGIC);
 end hw3;
 
@@ -40,6 +40,6 @@ architecture Behavioral of hw3 is
 
 begin
 
-h(0) <= '1' when d(7 downto 4) = d(3 downto 0) else '0';
+h <= '1' when (d(7 downto 4) = d(3 downto 0)) else '0';
 
 end Behavioral;

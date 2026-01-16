@@ -17,25 +17,15 @@
 -- Additional Comments:
 -- by chatGPT 1/14
 ----------------------------------------------------------------------------------
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
-use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity hw3_tb is
 end hw3_tb;
 
 architecture tb of hw3_tb is
-    signal d : std_logic_vector(7 downto 0);
+    signal d : unsigned(7 downto 0);
     signal h : std_logic;
 begin
 
@@ -50,26 +40,25 @@ begin
         variable upper_nibble : unsigned(3 downto 0);
         variable lower_nibble : unsigned(3 downto 0);
     begin
-        -- Exhaustively test all 8-bit inputs
+        -- Exhaustive test of all 8-bit values
         for i in 0 to 255 loop
-            d <= std_logic_vector(to_unsigned(i, 8));
+            d <= to_unsigned(i, 8);
             wait for 10 ns;
 
-            upper_nibble := unsigned(d(7 downto 4));
-            lower_nibble := unsigned(d(3 downto 0));
+            upper_nibble := d(7 downto 4);
+            lower_nibble := d(3 downto 0);
 
             if upper_nibble = lower_nibble then
                 assert h = '1'
-                    report "FAIL: expected h=1 for d=" & integer'image(i)
+                    report "FAIL: expected h = 1"
                     severity error;
             else
                 assert h = '0'
-                    report "FAIL: expected h=0 for d=" & integer'image(i)
+                    report "FAIL: expected h = 0"
                     severity error;
             end if;
         end loop;
 
-        -- End simulation
         wait;
     end process;
 
