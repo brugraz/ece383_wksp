@@ -73,12 +73,12 @@
     <visualElement>
       <elementName>Const</elementName>
       <elementAttributes/>
-      <pos x="60" y="300"/>
+      <pos x="60" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
       <elementAttributes/>
-      <pos x="60" y="280"/>
+      <pos x="60" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -117,12 +117,12 @@
       <p2 x="460" y="240"/>
     </wire>
     <wire>
-      <p1 x="180" y="260"/>
-      <p2 x="260" y="260"/>
-    </wire>
-    <wire>
       <p1 x="60" y="260"/>
       <p2 x="100" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="260"/>
+      <p2 x="260" y="260"/>
     </wire>
     <wire>
       <p1 x="240" y="180"/>
@@ -157,16 +157,16 @@
       <p2 x="360" y="340"/>
     </wire>
     <wire>
+      <p1 x="60" y="300"/>
+      <p2 x="60" y="320"/>
+    </wire>
+    <wire>
       <p1 x="220" y="120"/>
       <p2 x="220" y="160"/>
     </wire>
     <wire>
       <p1 x="220" y="160"/>
       <p2 x="220" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="60" y="260"/>
-      <p2 x="60" y="280"/>
     </wire>
   </wires>
   <measurementOrdering/>
