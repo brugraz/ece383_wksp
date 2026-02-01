@@ -31,8 +31,8 @@ ARCHITECTURE behavior OF instructor_tb IS
 
     -- If your coordinate_t uses different field names (e.g., x/y instead of row/column),
     -- update these aliases accordingly.
-    alias row    : unsigned(9 downto 0) is position.row;
-    alias column : unsigned(9 downto 0) is position.col;
+    alias row    : unsigned(10 downto 0) is position.row;
+    alias column : unsigned(10 downto 0) is position.col;
 
     -- Clock period definitions
     constant clk_period : time := 40 ns;

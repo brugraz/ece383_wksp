@@ -28,5 +28,23 @@ architecture numeric_stepper_arch of numeric_stepper is
     signal is_increment, is_decrement : boolean := false;
 begin
 
+process(clk)
+begin
+if (en = '1') then
+  if (up = '1') then
+    if (prev_up = '0') then
+      process_q <= process_q+1;
+    end if;
+  else (down = '1') then
+    if (prev_down = '0'') then
+      process_q <= process_q-1;
+    end if;
+  end if;
+end if;
+
+prev_up <= up;
+prev_down <= down;
+  
+end process;
     
 end numeric_stepper_arch;

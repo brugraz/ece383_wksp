@@ -2,7 +2,9 @@
 2020.2
 Nov  8 2024
 22:36:57
-C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sim_1/imports/Downloads/instructor_tb.vhd,1769202363,vhdl,,,,instructor_tb,,,,,,,,
-C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sources_1/imports/lab1/ece383_pkg.vhd,1769010920,vhdl,C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_signal_generator.vhd,,,ece383_pkg,,,,,,,,
+C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sources_1/imports/lab1/color_mapper.vhd,1769925128,vhdl,,,,color_mapper,,,,,,,,
+C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sources_1/imports/lab1/ece383_pkg.vhd,1769932389,vhdl,C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sources_1/imports/lab1/color_mapper.vhd;C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_log_tb.vhd;C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_signal_generator.vhd,,,ece383_pkg,,,,,,,,
 C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/sources_1/imports/new/counter.vhd,1769037021,vhdl,,,,counter,,,,,,,,
-C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_signal_generator.vhd,1769552408,vhdl,,,,vga_signal_generator,,,,,,,,
+C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_log_tb.vhd,1769922487,vhdl,,,,vga_log_tb,,,,,,,,
+C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_signal_generator.vhd,1769747357,vhdl,,,,vga_signal_generator,,,,,,,,

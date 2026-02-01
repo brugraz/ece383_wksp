@@ -21,7 +21,7 @@ architecture vga_signal_generator_arch of vga_signal_generator is
     
   constant h_max_px_total  : integer := 800;
   constant v_max_px_total  : integer := 525;
-  constant px_num_bits     : integer := 10;
+  constant px_num_bits     : integer := 11;
 
   constant h_max_px_visual : integer := 640;
   constant v_max_px_visual : integer := 480;

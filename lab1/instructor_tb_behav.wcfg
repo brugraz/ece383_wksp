@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="31,516.289457 us"></ZoomStartTime>
-      <ZoomEndTime time="37,491.289458 us"></ZoomEndTime>
-      <Cursor1Time time="32,512.122790 us"></Cursor1Time>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="40.001000001 ms"></ZoomEndTime>
+      <Cursor1Time time="40.001000000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="171"></NameColumnWidth>
-      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+      <ValueColumnWidth column_width="151"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="13" />
    <wvobject fp_name="/instructor_tb/clk" type="logic">
@@ -32,6 +32,24 @@
       <obj_property name="ElementShortName">position</obj_property>
       <obj_property name="ObjectShortName">position</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/instructor_tb/position.row" type="array">
+         <obj_property name="ElementShortName">.row[9:0]</obj_property>
+         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/instructor_tb/position.col" type="array">
+         <obj_property name="ElementShortName">.col[9:0]</obj_property>
+         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/instructor_tb/position.row" type="array">
+         <obj_property name="ElementShortName">.row[9:0]</obj_property>
+         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/instructor_tb/position.col" type="array">
+         <obj_property name="ElementShortName">.col[9:0]</obj_property>
+         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/instructor_tb/vga" type="array">
       <obj_property name="ElementShortName">vga</obj_property>
@@ -74,23 +92,5 @@
       <obj_property name="ObjectShortName">current_pos</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/instructor_tb/uut/current_pos.row" type="array">
-         <obj_property name="ElementShortName">.row[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/uut/current_pos.col" type="array">
-         <obj_property name="ElementShortName">.col[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/uut/current_pos.row" type="array">
-         <obj_property name="ElementShortName">.row[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/uut/current_pos.col" type="array">
-         <obj_property name="ElementShortName">.col[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
-      </wvobject>
    </wvobject>
 </wave_config>

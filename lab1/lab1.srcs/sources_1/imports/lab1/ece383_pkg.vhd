@@ -14,8 +14,8 @@ package ece383_pkg is
   
   -- Holds a location
   type coordinate_t is record
-       row: unsigned (9 downto 0);
-       col: unsigned (9 downto 0);
+       row: unsigned (10 downto 0);
+       col: unsigned (10 downto 0);
   end record;
   
   -- Holds a pixel's location and color
@@ -72,7 +72,8 @@ package ece383_pkg is
     num_bits  : integer := 8;
     max_value : integer := 127;
     min_value : integer := -128;
-    delta     : integer := 10
+    delta     : integer := 10;
+    init_val  : integer := 0
   );
   port (
     clk     : in  std_logic;
