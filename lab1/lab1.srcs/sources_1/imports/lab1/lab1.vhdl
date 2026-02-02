@@ -46,6 +46,8 @@ architecture structure of lab1 is
   constant stepper_volt_init_val    : integer := 320;
   constant stepper_time_init_val    : integer := 220;
 
+  constant yint_ch2                 : integer := 440;
+
   signal trigger: trigger_t;
 	signal pixel: pixel_t;
 	signal ch1, ch2: channel_t;
@@ -104,8 +106,12 @@ port map(
   ch2      => ch2
 );
 -- Determine if ch1 and or ch2 are active
-
+ch1.active <= '1' when pixel.coordinate.row = pixel.coordinate.col else '0';
+ch2.active <= '1' when pixel.coordinate.row = yint_ch2-pixel.coordinate.col else '0';
 -- Connect board hardware to signals
+ch1.en <= '1'; --sw(1);
+ch2.en <= '1'; --sw(0);
 
+led <= "00000";
 	
 end structure;

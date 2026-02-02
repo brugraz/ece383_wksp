@@ -72,17 +72,33 @@ v_counter_ctrl <= horizontal_roll;
 process (clk)
 begin
   if (rising_edge(clk)) then
-    if (current_pos.col >= (h_max_px_visual-1) and not (current_pos.col = h_max_px_total-1)) then
+  -- could we have used <= ... when ... here
+    if current_pos.col >= (h_max_px_visual-1) and not (current_pos.col = h_max_px_total-1) then
       h_blank_is_low <= false; else h_blank_is_low <= true; end if;
-    if (current_pos.row >= (v_max_px_visual-1) and not (current_pos.row = v_max_px_total-1)) then
-      v_blank_is_low <= false; else v_blank_is_low <= true; end if;
       
-    if (current_pos.col >= (h_max_px_visual-1+h_front_porch_pxw)
-     and current_pos.col < (h_max_px_visual-1+h_front_porch_pxw+h_sync_pxw)) then
+    if current_pos.col >= (h_max_px_visual-1+h_front_porch_pxw)
+   and current_pos.col < (h_max_px_visual-1+h_front_porch_pxw+h_sync_pxw) then
       h_sync_is_low  <= true;  else h_sync_is_low <= false; end if;
-    if (current_pos.row >= (v_max_px_visual-1+v_front_porch_pxw)
-     and current_pos.row < (v_max_px_visual-1+v_front_porch_pxw+v_sync_pxw)) then
+
+    if current_pos.row < v_max_px_visual then
+      v_blank_is_low <= true; else v_blank_is_low <= false; end if;
+      
+    if current_pos.row >= (v_max_px_visual+v_front_porch_pxw)
+   and current_pos.row < (v_max_px_visual+v_front_porch_pxw+v_sync_pxw) then
       v_sync_is_low  <= true;  else v_sync_is_low <= false; end if;
+      
+    -- cases on edge of vsync/blank rise and fall (@ column 799->000)
+    if current_pos.col = h_max_px_total-1 then
+      if current_pos.row = v_max_px_visual-1 then v_blank_is_low <= false; end if;
+      
+      if current_pos.row = v_max_px_total-1 then v_blank_is_low <= true; end if;
+        
+      if current_pos.row = v_max_px_visual-1+v_front_porch_pxw
+      then v_sync_is_low <= true; end if;
+        
+      if current_pos.row = v_max_px_visual-1+v_front_porch_pxw+v_sync_pxw
+      then v_sync_is_low <= false; end if;
+    end if;
   end if;
 end process;
 

@@ -21,7 +21,7 @@ end vga;
 architecture vga_arch of vga is
 
 constant num_bits_pos : integer := 11;
-signal w_position : unsigned(num_bits_pos-1 downto 0);
+signal w_position : coordinate_t;
 
 begin
 

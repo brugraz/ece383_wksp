@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Failure: Simulation complete.
+Time: 40008400 ns  Iteration: 0  Process: /vga_log_tb/stim  File: C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_log_tb.vhd
+$finish called at time : 40008400 ns : File "C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/vga_log_tb.vhd" Line 107
+INFO: xsimkernel Simulation Memory Usage: 29200 KB (Peak: 29200 KB), Simulation CPU Usage: 13046 ms

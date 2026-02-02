@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Feb  1 16:19:09 2026
+| Host         : C27-5CG31326ZG running 64-bit major release  (build 9200)
+| Command      : report_methodology -file lab1_methodology_drc_routed.rpt -pb lab1_methodology_drc_routed.pb -rpx lab1_methodology_drc_routed.rpx
+| Design       : lab1
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 1
++--------+----------+---------------------------------------------------+--------+
+| Rule   | Severity | Description                                       | Checks |
++--------+----------+---------------------------------------------------+--------+
+| XDCC-2 | Warning  | Scoped Non-Timing constraint/property overwritten | 1      |
++--------+----------+---------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.srcs/constrs_1/imports/ece383_wksp/Lab1.xdc (Line: 38)
+Previous Source: c:/Users/C27Bruno.Graziano/ece383_wksp/lab1/lab1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc (Line: 4)
+Related violations: <none>
+
+

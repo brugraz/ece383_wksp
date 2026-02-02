@@ -53,7 +53,7 @@ constant HORIZONTAL_GRIDBLOCK_PXW : integer := 60;
 constant VERTICAL_GRIDBLOCK_PXW   : integer := 50;
 constant TRIGGER_PXW : integer := 9;
 constant H_HASH_WIDTH : integer := 3;
-constant V_HASH_WIDTH : integer := 5;
+constant V_HASH_WIDTH : integer := 3;
 
 signal trigger_taper_v : integer := TRIGGER_PXW/2;
 signal trigger_taper_t : integer := TRIGGER_PXW/2;
@@ -89,8 +89,10 @@ is_vertical_hash <= true when is_within_grid
   else false;
 
 -- channel signals
-is_ch1_line <= true  when ch1.active = '1' and ch1.en = '1' else false;
-is_ch2_line <= false when ch2.active = '1' and ch2.en = '1' else false;
+is_ch1_line <= true  when is_within_grid 
+  and w_ch1.active = '1' and w_ch1.en = '1' else false;
+is_ch2_line <= false when is_within_grid
+  and w_ch2.active = '1' and w_ch2.en = '1' else false;
 
 -- triggers tapers (shape) for trigger drawing bools
 trigger_taper_v <= (TRIGGER_PXW/2)-(to_integer(current_pos.col)-GRID_START_COL);
