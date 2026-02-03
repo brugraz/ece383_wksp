@@ -51,7 +51,7 @@ constant HASH_VERTICAL_SPACING : integer := 10;
 
 constant HORIZONTAL_GRIDBLOCK_PXW : integer := 60;
 constant VERTICAL_GRIDBLOCK_PXW   : integer := 50;
-constant TRIGGER_PXW : integer := 9;
+constant TRIGGER_PXW : integer := 111;
 constant H_HASH_WIDTH : integer := 3;
 constant V_HASH_WIDTH : integer := 3;
 
@@ -91,7 +91,7 @@ is_vertical_hash <= true when is_within_grid
 -- channel signals
 is_ch1_line <= true  when is_within_grid 
   and w_ch1.active = '1' and w_ch1.en = '1' else false;
-is_ch2_line <= false when is_within_grid
+is_ch2_line <= true when is_within_grid
   and w_ch2.active = '1' and w_ch2.en = '1' else false;
 
 -- triggers tapers (shape) for trigger drawing bools
@@ -100,17 +100,17 @@ trigger_taper_t <= (TRIGGER_PXW/2)-(to_integer(current_pos.row)-GRID_START_ROW);
 
 -- to draw triggers
 is_trigger_volt <= true when is_within_grid
-  and (current_pos.row >= w_trigger.v-trigger_taper_v)  
-  and (current_pos.row <= w_trigger.v+trigger_taper_v)
-  and (current_pos.col >= GRID_START_COL)
-  and (current_pos.col <= GRID_START_COL+(TRIGGER_PXW/2)+1)
+  and (to_integer(current_pos.row) >= to_integer(w_trigger.v)-trigger_taper_v)  
+  and (to_integer(current_pos.row) <= to_integer(w_trigger.v)+trigger_taper_v)
+  and (to_integer(current_pos.col) >= GRID_START_COL)
+  and (to_integer(current_pos.col) <= GRID_START_COL+(TRIGGER_PXW/2)+1)
   else false;
 
 is_trigger_time <= true when is_within_grid
-  and (current_pos.col >= w_trigger.t-trigger_taper_t)
-  and (current_pos.col <= w_trigger.t+trigger_taper_t)
-  and (current_pos.row >= GRID_START_ROW)
-  and (current_pos.row <= GRID_START_ROW+(TRIGGER_PXW/2)+1)
+  and (to_integer(current_pos.col) >= to_integer(w_trigger.t)-trigger_taper_t)
+  and (to_integer(current_pos.col) <= to_integer(w_trigger.t)+trigger_taper_t)
+  and (to_integer(current_pos.row) >= GRID_START_ROW)
+  and (to_integer(current_pos.row) <= GRID_START_ROW+(TRIGGER_PXW/2)+1)
   else false;
 
 -- choose color 

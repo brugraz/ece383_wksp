@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1769987793">
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1770079698">
   <File Type="PA-TCL" Name="lab1.tcl"/>
   <File Type="REPORTS-TCL" Name="lab1_reports.tcl"/>
   <File Type="INIT-TIMING" Name="lab1_timing_summary_init.rpt"/>
@@ -197,9 +197,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

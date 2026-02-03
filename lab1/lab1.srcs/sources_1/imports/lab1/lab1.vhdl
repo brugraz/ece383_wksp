@@ -21,11 +21,11 @@ end lab1;
 
 architecture structure of lab1 is
 
-  constant CENTER : integer := 0;
-  constant DOWN : integer := 1;
-  constant LEFT : integer := 2;
+  constant CENTER : integer := 4;
+  constant DOWN : integer := 2;
+  constant LEFT : integer := 1;
   constant RIGHT : integer := 3;
-  constant UP : integer := 4;
+  constant UP : integer := 0;
 
   constant PX_MIN_GRID_VOLT : integer := 20;
   constant PX_MAX_GRID_VOLT : integer := 420;
@@ -43,8 +43,8 @@ architecture structure of lab1 is
   constant stepper_time_leftofscr   : integer := px_min_grid_time;
   constant stepper_time_delta       : integer := px_btwn_hashes_time;
 
-  constant stepper_volt_init_val    : integer := 320;
-  constant stepper_time_init_val    : integer := 220;
+  constant stepper_volt_init_val    : integer := 220;
+  constant stepper_time_init_val    : integer := 320;
 
   constant yint_ch2                 : integer := 440;
 
@@ -53,8 +53,10 @@ architecture structure of lab1 is
 	signal ch1, ch2: channel_t;
   signal time_trigger_value, volt_trigger_value : signed(STEPPER_NUM_BITS-1 downto 0);
 
+  signal w_btn : std_logic_vector(4 downto 0);
+
 begin
-   
+
 -- Add numeric steppers for time and voltage trigger
 stepper_volt : numeric_stepper
 generic map(
@@ -62,17 +64,16 @@ num_bits   => STEPPER_NUM_BITS,
 max_value  => stepper_volt_bottomofscr,
 min_value  => stepper_volt_topofscr,
 delta      => stepper_volt_delta,
-init_val   => (stepper_volt_bottomofscr+stepper_volt_topofscr)/2
+init_val   => stepper_volt_init_val
 )
 port map(
 clk     => clk,
 reset_n => reset_n,
 en      => '1', -- no trigger settings lock, always enable
-up      => btn(DOWN), -- larger Q -> lower on screen, press the "down" button
-down    => btn(UP),   -- smaller Q -> higher on screen, press the "up" button
+up      => w_btn(DOWN), -- larger Q -> lower on screen, press the "down" button
+down    => w_btn(UP),   -- smaller Q -> higher on screen, press the "up" button
 q       => volt_trigger_value
 );
-
 
 stepper_time : numeric_stepper
 generic map(
@@ -80,18 +81,22 @@ num_bits   => STEPPER_NUM_BITS,
 max_value  => stepper_time_rightofscr,
 min_value  => stepper_time_leftofscr,
 delta      => stepper_time_delta,
-init_val   => (stepper_time_rightofscr+stepper_time_leftofscr)/2
+init_val   => stepper_time_init_val
 )
 port map(
 clk     => clk,
 reset_n => reset_n,
 en      => '1', -- no trigger settings lock, always enable
-up      => btn(RIGHT),
-down    => btn(LEFT),
+up      => w_btn(RIGHT),
+down    => w_btn(LEFT),
 q       => time_trigger_value
 );
+
+w_btn <= btn;
+
 -- Assign trigger.t and trigger.v
--- in numeric_stepper.vhd
+trigger.t <= unsigned(time_trigger_value);
+trigger.v <= unsigned(volt_trigger_value);
        	
 -- Instantiate video
 video_inst : video
@@ -109,9 +114,10 @@ port map(
 ch1.active <= '1' when pixel.coordinate.row = pixel.coordinate.col else '0';
 ch2.active <= '1' when pixel.coordinate.row = yint_ch2-pixel.coordinate.col else '0';
 -- Connect board hardware to signals
-ch1.en <= '1'; --sw(1);
-ch2.en <= '1'; --sw(0);
+ch1.en <= sw(1);
+ch2.en <= sw(0);
 
 led <= "00000";
+
 	
 end structure;

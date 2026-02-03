@@ -43,8 +43,8 @@ architecture tb of vga_log_tb is
 
   -- color_mapper inputs
   signal trigger : trigger_t := (
-    t => (others => '0'),
-    v => (others => '0')
+    t => (to_unsigned(320, 11)),
+    v => (to_unsigned(220, 11))
   );
 
   signal ch1 : channel_t := (active => '0', en => '0');
@@ -80,7 +80,7 @@ begin
     
     -- Turn on/off ch1 and ch2
     ch1.en <= '1';
-    ch2.en <= '0';    
+    ch2.en <= '1';    
     ch1.active <= '1' when (position.row = position.col) else '0';
     ch2.active <= '1' when (position.row = 440 - position.col) else '0';
 
