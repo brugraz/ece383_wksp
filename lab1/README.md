@@ -10,7 +10,7 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
     ![hw5 diagram](images/hw5.png)
 
-    ![block diagram](images/
+    ![block diagram](images/blockdiag.png)
 
 ##### About each component
 
@@ -74,4 +74,4 @@ Evidence of Functionality which assumes working Gate checks can be found in Team
 
 #### Conclusion
 
-I learned how VGA is synchronized, and become more proficient in VHDL, Vivado, GHDL and other text editors. In Vivado specifically I learned more about how to search for hints on VHDL, and using the "IP Catalog" to find tools like the Clocking Wizard. I also learned how to make my own project in Vivado, though we did start that earlier than the lab in early homeworks. I learned more about the way Vivado or Tcl organizes RTL files, and the folders you have to click through to get to where you need to be in the Windows Explorer, and that this is not stardard across VHDL or any hardware description, but it is a way of organizing the HDL files into "projects." In this lab I learned really what 383 is about (it's about building) and what this class asks of us.
+I learned how VGA is synchronized, and become more proficient in VHDL, Vivado, GHDL and other text editors. In Vivado specifically I learned more about how to search for hints on VHDL, and using the "IP Catalog" to find tools like the Clocking Wizard. I also learned how to make my own project in Vivado, though we did start that earlier than the lab in early homeworks. I learned more about the way Vivado or Tcl organizes RTL files, and the folders you have to click through to get to where you need to be in the Windows Explorer, and that this is not standard across VHDL or any hardware description, but it is a way of organizing the HDL files into "projects." In this lab I learned really what 383 is about (it's about building) and what this class asks of us.
