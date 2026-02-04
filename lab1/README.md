@@ -10,15 +10,57 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
     ![block diagram](images/
 
-##### About each component
+###### About each component
 
 `vga_signal_generator` outputs an increasing position (increasing in columns one column a single pixel, according to the clock cycle, and after the highest column, ticking up a row, and after the highest row, ticking back to row 0 and column 0) as well as vga characteristic states like `h_sync` `v_sync` and `blank` with logic within that determines when during the row and column counts each signal would be high or low. The inputs are `clk` and `reset_n` and the outputs are `position` (a coordinate record of unsigned row and col) and `vga` (a VGA state record for `h_sync`, `v_sync` and `blank`).
 
+`counter` (instantiated as two components, `h_counter` and `v_counter`) counts up to a certain maximum value using a number of bits, both specified as generics, and sends a rolling signal once the maximum value is reached while also accomodating for the 1-clock-cycle delay so that as the value ticks past the maximum the reciever of the roll signal would be able to already have their value tick by one. The generic integers are `num_bits` and `max_value`, the inputs are `clk`, `reset_n` and `ctrl` (to set what mode the counter is in), and the outputs are the `roll` signal and `Q` which is a vector of `num_bits` bits.
 
+`color_mapper` is purely combinational and reads the position output by the `vga_signal_generator` and colors the current pixel based on whether we are on a gridline, a channel line, a hashmark, a trigger mark, or none of the above, and output the corresponding color. The inputs are `position` the coordinate record from `vga_signal_generator`, `trigger` which tells the mapper where the triggers are so it knows where to color as such, `ch1` and `ch2` which are channel records consisting on each channel's enable and active options, that is, whether each is turned on and whether the current pixel is the trigger mark's location, respectively.
 
+`vga` holds all of the above inside itself. It is the entire module for the VGA interface - anything beyond it is extra to VGA. Its inputs are the `clk`, `reset_n`, and `trigger` (as sent from a higher module along with `ch1` `ch2`), and its outputs are `vga` (the VGA states from the `vga_signal_generator` and `pixel` which is a "pixel" record type, holding both the `color` and `position` of the current pixel.
+
+`dvid` is an adapter VGA to HDMI. On our Nexys Video board we have only HDMI output ports, and we just built VGA interface.
+
+`video` combines `vga` with `dvid` and outputs all things `vga` does to exclude `color` (but it still does have the `pixel` record's `position`) and with the addition of `tmds` and `tmdsb` (out) which are HDMI signals.
+
+The `numeric_stepper` (as instantiated twice, one for volt axis and the other for time axis) is a portable module outside all of the above that when excited allows an incoming signal to be stopped if the previous of itself was also high. This means if a button were pressed, when put through this module, it will go back down low to not generate millions of "press" signals during a clock rate like ours (25 MHz). Instead of registering 5 million presses over 1/5 seconds of pressing a button, with this componenet we will register one button press. It is for moving the triggers across the screen for both time and volts. Being portable it has generics `num_bits`, `max_value`, `min_value`, `delta` (to change the output by upon each press), and the added `init_val` to which as it sounds like the output value will be initialized to upon reset. The inputs are the `clk`, `reset_n`, `en` (enable or disable the device, not touched in this lab), `up` (turn output value up), `down` (or down), and `q` (the output value).
+
+And finally `lab1` is where the `numeric_stepper` modules are wired into the trigger values, and those are connected into the instantiated `video`. `ch1` and `ch2` are hardcoded here to test drawings, `ch1` as a yellow y=x line and `ch2` as a green y=(GRID HEIGHT)-x line. They make an X on the screen. `lab1` takes as input the `clk`, `reset_n` (as a button), `btn` (the rest of the directional buttons for the triggers), `sw` for `ch1` `ch2` enable or disable, and outputs `led` for debugging and `tmds` `tmdsb` HDMI out.
 
 #### Test/Debug
 
+##### Waveform screenshots
+
+`h_sync` goes high, low, then high over `col` count:
+
+
+
+`v_sync` goes high, low, and high over `row` AND `col`:
+
+
+
+`blank` goes high, low, and high over `col` and `row`:
+
+
+
+`col` rolls over, `row` increments:
+
+Max for `col` and for `row`:
+
+
+##### Problems encountered and fixes
+
 #### Results
 
+Gate check 1 was achieved on time. The `counter` implementations to `vga_signal_generator` went well.
+
+Gate check 2 was achieved partially on time - the `vga_signal_generator` was to be made in its entirety, to include the `vga` record states `h_sync` `v_sync` `blank`. There were no errors reported from the instructor's test bench, so it was a good submission, but I found later I had errors as stated above and fixed them at around the time or a bit later than the lab's Functionality was due. The problem was with the clock cycle delay on the vertical rollover.
+
+Functionality was achieved but not on time. I did the required functionality and A functionality at the same time. The requirements are met now.
+
+Evidence of Functionality which assumes working Gate checks can be found in Teams under SP26-M5 Trimble > Graziano > there is the video, and my repository is pushed to GitHub.
+
 #### Conclusion
+
+I learned how VGA is synchronized, and become more proficient in VHDL, Vivado, GHDL and other text editors. In Vivado specifically I learned more about how to search for hints on VHDL, and using the "IP Catalog" to find tools like the Clocking Wizard. I also learned how to make my own project in Vivado, though we did start that earlier than the lab in early homeworks. I learned more about the way Vivado or Tcl organizes RTL files, and the folders you have to click through to get to where you need to be in the Windows Explorer, and that this is not stardard across VHDL or any hardware description, but it is a way of organizing the HDL files into "projects." I learned more what 383 is about and what this class asks of us.
