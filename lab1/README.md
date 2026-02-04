@@ -58,8 +58,8 @@ Max for `col` and for `row`:
 - Not checking any imported test bench file for hardcoded values that steer the result away from your interest. Verifying constraint files as well can save time and hair.
 - Forgetting to simulate properly: running the simulator for a specified amount of time ensures control and sanity, and that at least the problem is not with the simulator.
 - Rolling over small details: don't choose to ignore them, like when `col` turns 0 (it rolls over), the `v_sync` and `blank` wait another single clk cycle to update accordingly and that was too much for the online simultor to display anything at all. Who would know then what an error like that would do to the bitstream generation?
-- NOT ADDING "`if rising edge()`" in a `process(clk)`: It stripped a few hours from my life not knowing what I did wrong or was missing. Everyone who looked over mine missed it too. Process(clk) looks like enough; it is not. Need `if rising_edge(clk)`. It actually is a copypaste template in Vivado's lightbult papers, I think.
-- Not paying attention to types when making wires/signals as glue. Things you thought were unsigned or logic vector could be entire records you thought about and while the simulation will work, the bitstream generation will not.
+- NOT ADDING "`if rising edge()`" in a `process(clk)`: I did not see what I was missing for a long time and it was a conundrum. Everyone who looked over mine missed it too. `process(clk)` looks like enough; it is not. Need `if rising_edge(clk)`. It actually is one of the copypaste templates in Vivado's lightbulb papers, I think.
+- Not paying attention to types when making wires/signals as glue. Things you thought were unsigned or logic vector could be entire records you forgot about and while the simulation will work, the bitstream generation will not.
 
 
 #### Results
@@ -68,7 +68,7 @@ Gate check 1 was achieved on time. The `counter` implementations to `vga_signal_
 
 Gate check 2 was achieved partially on time - the `vga_signal_generator` was to be made in its entirety, to include the `vga` record states `h_sync` `v_sync` `blank`. There were no errors reported from the instructor's test bench, so it was a good submission, but I found later I had errors as stated above and fixed them at around the time or a bit later than the lab's Functionality was due. The problem was with the clock cycle delay on the vertical rollover.
 
-Functionality was achieved but not on time. I did the required functionality and A functionality at the same time. The requirements are met now.
+Functionality was achieved but not on time. I did the required functionality and A functionality at the same time.
 
 Evidence of Functionality which assumes working Gate checks can be found in Teams under SP26-M5 Trimble > Graziano > there is the video, and my repository is pushed to GitHub.
 
