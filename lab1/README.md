@@ -6,11 +6,13 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
 #### Design/Implementation
 
-    ![hw5 diagram](images/
+##### Diagrams, from HW5 and block diagram
+
+    ![hw5 diagram](images/hw5.png)
 
     ![block diagram](images/
 
-###### About each component
+##### About each component
 
 `vga_signal_generator` outputs an increasing position (increasing in columns one column a single pixel, according to the clock cycle, and after the highest column, ticking up a row, and after the highest row, ticking back to row 0 and column 0) as well as vga characteristic states like `h_sync` `v_sync` and `blank` with logic within that determines when during the row and column counts each signal would be high or low. The inputs are `clk` and `reset_n` and the outputs are `position` (a coordinate record of unsigned row and col) and `vga` (a VGA state record for `h_sync`, `v_sync` and `blank`).
 
@@ -63,4 +65,4 @@ Evidence of Functionality which assumes working Gate checks can be found in Team
 
 #### Conclusion
 
-I learned how VGA is synchronized, and become more proficient in VHDL, Vivado, GHDL and other text editors. In Vivado specifically I learned more about how to search for hints on VHDL, and using the "IP Catalog" to find tools like the Clocking Wizard. I also learned how to make my own project in Vivado, though we did start that earlier than the lab in early homeworks. I learned more about the way Vivado or Tcl organizes RTL files, and the folders you have to click through to get to where you need to be in the Windows Explorer, and that this is not stardard across VHDL or any hardware description, but it is a way of organizing the HDL files into "projects." I learned more what 383 is about and what this class asks of us.
+I learned how VGA is synchronized, and become more proficient in VHDL, Vivado, GHDL and other text editors. In Vivado specifically I learned more about how to search for hints on VHDL, and using the "IP Catalog" to find tools like the Clocking Wizard. I also learned how to make my own project in Vivado, though we did start that earlier than the lab in early homeworks. I learned more about the way Vivado or Tcl organizes RTL files, and the folders you have to click through to get to where you need to be in the Windows Explorer, and that this is not stardard across VHDL or any hardware description, but it is a way of organizing the HDL files into "projects." In this lab I learned really what 383 is about (it's about building) and what this class asks of us.

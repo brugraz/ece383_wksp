@@ -1,3 +1,0 @@
-Time resolution is 1 ps
-Error: Holding UP high caused multiple increments
-Time: 45 ns  Iteration: 0  Process: /NumStepper_tb/stim  File: C:/Users/C27Bruno.Graziano/ece383_wksp/lab1/numeric_stepper_tb.vhd
