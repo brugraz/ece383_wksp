@@ -53,13 +53,13 @@ Max for `col` and for `row`:
 
 ##### Problems encountered and fixes
 
-- Not using to_integer on certain calculations. There is a lot of this in VHDL. If there are unsigned, it is best to make them integers when doing calculations with other integers on the right side of an assignment.
+- Not using `to_integer` on certain calculations. There is a lot of this in VHDL. If there are unsigned, it is best to make them integers when doing calculations with other integers on the right side of an assignment.
 - Converting types simply: if converting unsigned to signed or to std_logic_vector, to any of the three to any of the other two, there is no need for a "to_...(...)" operator. The data just needs to be reinterpreted by VHDL, so prefix it with "unsigned(...) signed(...) std_logic_vector(...), like C typecasting.
-Not checking any imported test bench file for hardcoded values that steer the result away from your interest. Verifying constraint files as well can save hours.
-Simulate properly: running the simulator for a specified amount of time ensures control and sanity, and that at least the problem is not with the simulator.
-Rolling over small details: don't choose to ignore them, like when `col` turns 0 (it rolls over), the `v_sync` and `blank` wait another single clk cycle to update accordingly and that was too much for the online simultor to display anything at all. Who would know then what an error like that would do to the bitstream generation?
-ALWAYS ADD "`if rising edge()`" in a `process(clk)`: It stripped a few hours from my life not knowing what I did wrong or was missing. Everyone who looked over mine missed it too. Process(clk) looks like enough; it is not. Need `if rising_edge(clk)`. It actually is a copypaste template in Vivado's lightbult papers, I think.
-Not paying attention to types when making wires/signals as glue. Things you thought were unsigned or logic vector could be entire records you thought about and while the simulation will work, the bitstream generation will not.
+- Not checking any imported test bench file for hardcoded values that steer the result away from your interest. Verifying constraint files as well can save time and hair.
+- Forgetting to simulate properly: running the simulator for a specified amount of time ensures control and sanity, and that at least the problem is not with the simulator.
+- Rolling over small details: don't choose to ignore them, like when `col` turns 0 (it rolls over), the `v_sync` and `blank` wait another single clk cycle to update accordingly and that was too much for the online simultor to display anything at all. Who would know then what an error like that would do to the bitstream generation?
+- NOT ADDING "`if rising edge()`" in a `process(clk)`: It stripped a few hours from my life not knowing what I did wrong or was missing. Everyone who looked over mine missed it too. Process(clk) looks like enough; it is not. Need `if rising_edge(clk)`. It actually is a copypaste template in Vivado's lightbult papers, I think.
+- Not paying attention to types when making wires/signals as glue. Things you thought were unsigned or logic vector could be entire records you thought about and while the simulation will work, the bitstream generation will not.
 
 
 #### Results
