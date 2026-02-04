@@ -26,7 +26,7 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
 `video` combines `vga` with `dvid` and outputs all things `vga` does to exclude `color` (but it still does have the `pixel` record's `position`) and with the addition of `tmds` and `tmdsb` (out) which are HDMI signals.
 
-The `numeric_stepper` (as instantiated twice, one for volt axis and the other for time axis) is a portable module outside all of the above that when excited allows an incoming signal to be stopped if the previous of itself was also high. This means if a button were pressed, when put through this module, it will go back down low to not generate millions of "press" signals during a clock rate like ours (25 MHz). Instead of registering 5 million presses over 1/5 seconds of pressing a button, with this componenet we will register one button press. It is for moving the triggers across the screen for both time and volts. Being portable it has generics `num_bits`, `max_value`, `min_value`, `delta` (to change the output by upon each press), and the added `init_val` to which as it sounds like the output value will be initialized to upon reset. The inputs are the `clk`, `reset_n`, `en` (enable or disable the device, not touched in this lab), `up` (turn output value up), `down` (or down), and `q` (the output value).
+The `numeric_stepper` (as instantiated twice, one for volt axis and the other for time axis) is a portable module outside all of the above that when excited allows an incoming signal to be stopped if the previous of itself was also high. This means if a button were pressed, when put through this module, it will go back down low to not generate millions of "press" signals during a clock rate like ours (25 MHz). Instead of registering 5 million presses over 1/5 seconds of pressing a button, with this component we will register one button press. It is for moving the triggers across the screen for both time and volts. Being portable it has generics `num_bits`, `max_value`, `min_value`, `delta` (to change the output by upon each press), and the added `init_val` to which as it sounds like the output value will be initialized to upon reset. The inputs are the `clk`, `reset_n`, `en` (enable or disable the device, not touched in this lab), `up` (turn output value up), `down` (or down), and `q` (the output value).
 
 And finally `lab1` is where the `numeric_stepper` modules are wired into the trigger values, and those are connected into the instantiated `video`. `ch1` and `ch2` are hardcoded here to test drawings, `ch1` as a yellow y=x line and `ch2` as a green y=(GRID HEIGHT)-x line. They make an X on the screen. `lab1` takes as input the `clk`, `reset_n` (as a button), `btn` (the rest of the directional buttons for the triggers), `sw` for `ch1` `ch2` enable or disable, and outputs `led` for debugging and `tmds` `tmdsb` HDMI out.
 
@@ -52,6 +52,15 @@ Max for `col` and for `row`:
 
 
 ##### Problems encountered and fixes
+
+- Not using to_integer on certain calculations. There is a lot of this in VHDL. If there are unsigned, it is best to make them integers when doing calculations with other integers on the right side of an assignment.
+- Converting types simply: if converting unsigned to signed or to std_logic_vector, to any of the three to any of the other two, there is no need for a "to_...(...)" operator. The data just needs to be reinterpreted by VHDL, so prefix it with "unsigned(...) signed(...) std_logic_vector(...), like C typecasting.
+Not checking any imported test bench file for hardcoded values that steer the result away from your interest. Verifying constraint files as well can save hours.
+Simulate properly: running the simulator for a specified amount of time ensures control and sanity, and that at least the problem is not with the simulator.
+Rolling over small details: don't choose to ignore them, like when `col` turns 0 (it rolls over), the `v_sync` and `blank` wait another single clk cycle to update accordingly and that was too much for the online simultor to display anything at all. Who would know then what an error like that would do to the bitstream generation?
+ALWAYS ADD "`if rising edge()`" in a `process(clk)`: It stripped a few hours from my life not knowing what I did wrong or was missing. Everyone who looked over mine missed it too. Process(clk) looks like enough; it is not. Need `if rising_edge(clk)`. It actually is a copypaste template in Vivado's lightbult papers, I think.
+Not paying attention to types when making wires/signals as glue. Things you thought were unsigned or logic vector could be entire records you thought about and while the simulation will work, the bitstream generation will not.
+
 
 #### Results
 
