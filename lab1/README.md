@@ -2,7 +2,7 @@
 
 #### Introduction
 
-We need to display a grid that is fitting for a two-channel oscilloscope on a 640x480 VGA screen. To test the channels, we will include two hard-coded lines that are enabled upon user input. There will also be trigger marks that are movable by the pressing of directional buttons. The horizontal axis will be time, and the vertical voltage. The VGA synchonization lab will consist of interfacing layers of modules that contribute to an overall design whose gluing of its interior components and logic of most interior components are entirely written by student.
+We need to display a grid that is fitting for a two-channel oscilloscope on a 640x480 VGA screen. To test the channels, we will include two hard-coded lines that are enabled upon user input. There will also be trigger marks that are movable by the pressing of directional buttons. The horizontal axis will be time, and the vertical voltage. The VGA synchonization lab will consist of interfacing layers of modules that contribute to an overall design whose gluing of its interior components and logic of most interior components are written and interfaced during the lab.
 
 #### Design/Implementation
 
@@ -10,7 +10,11 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
 ![hw5 diagram](images/hw5.png)
 
+A map of the screen we built in VGA.
+
 ![block diagram](images/blockdiag.png)
+
+A block diagram of Lab 1.
 
 ##### About each component
 
@@ -36,20 +40,31 @@ And finally `lab1` is where the `numeric_stepper` modules are wired into the tri
 
 `h_sync` goes high, low, then high over `col` count:
 
+![h_sync_hi](images/h_sync_hi.png)
 
+![h_sync lo](images/h_sync_lo.png)
+
+![h_sync hi 2](images/h_sync_hi2.png)
 
 `v_sync` goes high, low, and high over `row` AND `col`:
 
+![v_sync hi](images/v_sync_hi.png)
 
+![v_sync lo](images/v_sync_lo.png)
+
+![v_sync hi 2](images/v_sync_hi2.png)
 
 `blank` goes high, low, and high over `col` and `row`:
 
+![blank hi](images/blank_hi.png)
 
+![blank lo](images/blank_lo.png)
 
-`col` rolls over, `row` increments:
+![blank hi 2](images/blank_hi2.png)
 
-Max for `col` and for `row`:
+`col` rolls over, `row` increments, max for `col` and for `row`:
 
+![col roll and row roll](images/col_roll_row.png)
 
 ##### Problems encountered and fixes
 
