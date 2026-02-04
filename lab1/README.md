@@ -8,9 +8,9 @@ We need to display a grid that is fitting for a two-channel oscilloscope on a 64
 
 ##### Diagrams, from HW5 and block diagram
 
-    ![hw5 diagram](images/hw5.png)
+    ![hw5 diagram]("images/hw5.png")
 
-    ![block diagram](images/blockdiag.png)
+    ![block diagram]("images/blockdiag.png")
 
 ##### About each component
 
