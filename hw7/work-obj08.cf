@@ -1,0 +1,4 @@
+v 4
+file / "C:\Users\C27Bruno.Graziano\ece383_wksp\hw7\button_debounce.vhdl" "1569ef670c7a31b17db58b7a3173707a95dd3351" "20260207204436.258":
+  entity button_debounce at 18( 844) + 0 on 15;
+  architecture behavior of button_debounce at 29( 1081) + 0 on 16;

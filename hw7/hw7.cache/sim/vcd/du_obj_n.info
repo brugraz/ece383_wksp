@@ -1,0 +1,12 @@
+        In: {clk}                          VHDL   
+        In: {reset}                        VHDL   
+        In: {button}                       VHDL   
+       Out: {action}                       VHDL   
+  Declared: {cw[1:0]}                      VHDL   
+  Declared: {sw}                           VHDL   
+  Declared: {state}                        VHDL   
+  Declared: {D[10:0]}                      VHDL   
+  Declared: {Q[10:0]}                      VHDL   
+  Constant: {N_BITS}                       VHDL   
+  Constant: {COOLDOWN_20ms_100k}           VHDL   
+
