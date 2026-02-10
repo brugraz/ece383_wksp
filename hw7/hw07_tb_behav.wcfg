@@ -10,45 +10,20 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="116.308333334 ms"></ZoomStartTime>
-      <ZoomEndTime time="501.308333335 ms"></ZoomEndTime>
-      <Cursor1Time time="220.515000000 ms"></Cursor1Time>
+      <ZoomStartTime time="14.505000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="165.105000001 ms"></ZoomEndTime>
+      <Cursor1Time time="140.005000000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="180"></NameColumnWidth>
-      <ValueColumnWidth column_width="170"></ValueColumnWidth>
+      <ValueColumnWidth column_width="163"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
-   <wvobject fp_name="/hw07_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/reset" type="logic">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/button" type="logic">
-      <obj_property name="ElementShortName">button</obj_property>
-      <obj_property name="ObjectShortName">button</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/action" type="logic">
-      <obj_property name="ElementShortName">action</obj_property>
-      <obj_property name="ObjectShortName">action</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/crtl" type="array">
-      <obj_property name="ElementShortName">crtl[1:0]</obj_property>
-      <obj_property name="ObjectShortName">crtl[1:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/D" type="array">
-      <obj_property name="ElementShortName">D[4:0]</obj_property>
-      <obj_property name="ObjectShortName">D[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/Q" type="array">
-      <obj_property name="ElementShortName">Q[4:0]</obj_property>
-      <obj_property name="ObjectShortName">Q[4:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-   </wvobject>
+   <WVObjectSize size="6" />
+   <wave_markers>
+      <marker time="120015000000" label="" />
+      <marker time="60015000000" label="" />
+      <marker time="80005000000" label="" />
+   </wave_markers>
    <wvobject fp_name="/hw07_tb/uut1/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -65,34 +40,14 @@
       <obj_property name="ElementShortName">action</obj_property>
       <obj_property name="ObjectShortName">action</obj_property>
    </wvobject>
-   <wvobject fp_name="/hw07_tb/uut1/cw" type="array">
-      <obj_property name="ElementShortName">cw[1:0]</obj_property>
-      <obj_property name="ObjectShortName">cw[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/uut1/sw" type="logic">
-      <obj_property name="ElementShortName">sw</obj_property>
-      <obj_property name="ObjectShortName">sw</obj_property>
-   </wvobject>
    <wvobject fp_name="/hw07_tb/uut1/state" type="other">
       <obj_property name="ElementShortName">state</obj_property>
       <obj_property name="ObjectShortName">state</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/uut1/D" type="array">
-      <obj_property name="ElementShortName">D[10:0]</obj_property>
-      <obj_property name="ObjectShortName">D[10:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/hw07_tb/uut1/Q" type="array">
       <obj_property name="ElementShortName">Q[10:0]</obj_property>
       <obj_property name="ObjectShortName">Q[10:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="isExpanded"></obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/uut1/N_BITS" type="other">
-      <obj_property name="ElementShortName">N_BITS</obj_property>
-      <obj_property name="ObjectShortName">N_BITS</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hw07_tb/uut1/COOLDOWN_20ms_100k" type="other">
-      <obj_property name="ElementShortName">COOLDOWN_20ms_100k</obj_property>
-      <obj_property name="ObjectShortName">COOLDOWN_20ms_100k</obj_property>
    </wvobject>
 </wave_config>
