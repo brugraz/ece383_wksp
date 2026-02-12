@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Feb 12 15:06:54 2026
+# Process ID         : 36048
+# Current directory  : C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/clk_wiz_0_synth_1
+# Command line       : vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/clk_wiz_0_synth_1\vivado.jou
+# Running On         : C27-5CG31326ZG
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 17228 MB
+# Total Virtual      : 33671 MB
+# Available Virtual  : 5525 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

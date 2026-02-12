@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1770935359">
+  <File Type="PA-TCL" Name="lab2.tcl"/>
+  <File Type="REPORTS-TCL" Name="lab2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lab2.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="lab2_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="lab2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lab2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="lab2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="lab2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="lab2_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/audio_init.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/audio_init.v"/>
+        <Attr Name="ImportTime" Val="1739223462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Audio_Codec_Wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1739223462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/TWICtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/TWICtl.vhd"/>
+        <Attr Name="ImportTime" Val="1739223464"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/ece383_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/ece383_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1770722192"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/color_mapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/color_mapper.vhd"/>
+        <Attr Name="ImportTime" Val="1770079689"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1769037021"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/dvid.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/dvid.vhdl"/>
+        <Attr Name="ImportTime" Val="1770713204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/i2s_ctl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/i2s_ctl.vhd"/>
+        <Attr Name="ImportTime" Val="1739223462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/lab2_datapath.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2_datapath.vhdl"/>
+        <Attr Name="ImportTime" Val="1770721726"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/lab2_fsm.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2_fsm.vhdl"/>
+        <Attr Name="ImportTime" Val="1770714746"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/tdms.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/tdms.vhdl"/>
+        <Attr Name="ImportTime" Val="1770713204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/trigger_detector.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/trigger_detector.vhd"/>
+        <Attr Name="ImportTime" Val="1770721826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vga.vhd"/>
+        <Attr Name="ImportTime" Val="1769986818"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/vga_signal_generator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vga_signal_generator.vhd"/>
+        <Attr Name="ImportTime" Val="1769984094"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/video.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/video.vhdl"/>
+        <Attr Name="ImportTime" Val="1769010922"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/lab2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2.vhd"/>
+        <Attr Name="ImportTime" Val="1739225250"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/numeric_stepper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/numeric_stepper.vhd"/>
+        <Attr Name="ImportTime" Val="1770078300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/vga_log_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/vga_log_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1770054939"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lab2"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/lab2/Lab2.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab2.xdc"/>
+        <Attr Name="ImportTime" Val="1739223462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+</GenRun>

@@ -1,0 +1,2 @@
+clk_wiz_1_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_sim_netlist.vhdl,incdir="../../../../lab2.gen/sources_1/ip/clk_wiz_1"
+glbl.v,Verilog,xil_defaultlib,glbl.v

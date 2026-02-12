@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lec11_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="lec11_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,554.000001 us"></ZoomEndTime>
+      <Cursor1Time time="886.500000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/lec11_tb/uut/cu/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/kbClk" type="logic">
+      <obj_property name="ElementShortName">kbClk</obj_property>
+      <obj_property name="ObjectShortName">kbClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/dp/keyCntr" type="array">
+      <obj_property name="ElementShortName">keyCntr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">keyCntr[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/kbData" type="logic">
+      <obj_property name="ElementShortName">kbData</obj_property>
+      <obj_property name="ObjectShortName">kbData</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/dp/cw" type="array">
+      <obj_property name="ElementShortName">cw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/dp/sw" type="logic">
+      <obj_property name="ElementShortName">sw</obj_property>
+      <obj_property name="ObjectShortName">sw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/dp/scan" type="array">
+      <obj_property name="ElementShortName">scan[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scan[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lec11_tb/uut/dp/shiftReg" type="array">
+      <obj_property name="ElementShortName">shiftReg[10:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftReg[10:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
