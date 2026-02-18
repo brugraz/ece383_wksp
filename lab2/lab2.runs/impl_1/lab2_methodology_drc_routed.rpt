@@ -1,0 +1,157 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 12:34:43 2026
+| Host         : C27-5CG31326ZG running 64-bit major release  (build 9200)
+| Command      : report_methodology -file lab2_methodology_drc_routed.rpt -pb lab2_methodology_drc_routed.pb -rpx lab2_methodology_drc_routed.rpx
+| Design       : lab2
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 23
++-----------+------------------+------------------------------------------------------------------+--------+
+| Rule      | Severity         | Description                                                      | Checks |
++-----------+------------------+------------------------------------------------------------------+--------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 16     |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 2      |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1      |
+| TIMING-20 | Warning          | Non-clocked latch                                                | 2      |
+| XDCC-2    | Warning          | Scoped Non-Timing constraint/property overwritten                | 1      |
+| LATCH-1   | Advisory         | Existing latches in the design                                   | 1      |
++-----------+------------------+------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/BCLK_int_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Bclk_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Bclk_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Bclk_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Bclk_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Bclk_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Lrclk_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Lrclk_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Lrclk_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Lrclk_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/Cnt_Lrclk_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/Audio_Codec/audio_inout/LRCLK_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/leftChannelMemory/caged/sdp_bl.ramb18_dp_bl.ram18_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/leftChannelMemory/caged/sdp_bl.ramb18_dp_bl.ram18_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/rightChannelMemory/caged/sdp_bl.ramb18_dp_bl.ram18_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin datapath/rightChannelMemory/caged/sdp_bl.ramb18_dp_bl.ram18_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1 is created on an inappropriate internal pin datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-27#2 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 is created on an inappropriate internal pin datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, datapath/clk
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch datapath/ch1_reg[active] cannot be properly analyzed as its control pin datapath/ch1_reg[active]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch datapath/ch2_reg[active] cannot be properly analyzed as its control pin datapath/ch2_reg[active]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/constrs_1/imports/lab2/Lab2.xdc (Line: 38)
+Previous Source: c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc (Line: 4)
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 2 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

@@ -79,8 +79,9 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v
 read_vhdl -library xil_defaultlib {
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd
-  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/ece383_pkg.vhd
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/dvid.vhdl
@@ -99,7 +100,7 @@ set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graz
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+read_ip -quiet C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
@@ -117,6 +118,8 @@ read_xdc C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/constrs_1/imports
 set_property used_in_implementation false [get_files C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/constrs_1/imports/lab2/Lab2.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/utils_1/imports/synth_1/lab2.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

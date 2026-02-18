@@ -14,8 +14,8 @@ package ece383_pkg is
   
   -- Holds a location
   type coordinate_t is record
-       row: unsigned (9 downto 0);
-       col: unsigned (9 downto 0);
+    row: unsigned (9 downto 0);
+    col: unsigned (9 downto 0);
   end record;
   
   -- Holds a pixel's location and color
@@ -134,38 +134,39 @@ package ece383_pkg is
    end component;
    
    -- Holds the pixel clock, VGA component, and DVID (HDMI OUT)
-   component video is
-    port (  clk : in  STD_LOGIC;
-            reset_n : in  STD_LOGIC;
-            tmds : out  STD_LOGIC_VECTOR (3 downto 0);
-            tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
-            trigger: in trigger_t;
-            position: out coordinate_t;
-            ch1: in channel_t;
-            ch2: in channel_t);
+component video is Port (  
+     clk : in  STD_LOGIC;
+    reset_n : in  STD_LOGIC;
+    tmds : out  STD_LOGIC_VECTOR (3 downto 0);
+    tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
+    trigger: in trigger_t;
+    position: out coordinate_t;
+    ch1: in channel_t;
+    ch2: in channel_t);
 	end component;	  
 	
 	-- Structural component which holds the vga_signal_generator and the color_mapper
 	component vga is
-	port(	clk: in  STD_LOGIC;
-			reset_n : in  STD_LOGIC;
-			vga: out vga_t;
-			pixel: out pixel_t;
-			trigger: in trigger_t;
-			ch1: in channel_t;
-			ch2: in channel_t);
+	port(	
+	  clk: in  STD_LOGIC;
+    reset_n : in  STD_LOGIC;
+    vga: out vga_t;
+    pixel: out pixel_t;
+    trigger: in trigger_t;
+    ch1: in channel_t;
+    ch2: in channel_t);
 	end component;
 	
 	-- Component which takes an input signal (monitored signal), a threshold, a clock, and a ready flag and outputs a '1' on 
 	--  crossed_trigger whenever the monitored signal crosses through the trigger
 	component trigger_detector is
     port (
-        clk              : in  std_logic;
-        reset_n          : in  std_logic;
-        threshold        : in  unsigned;
-        ready            : in  std_logic;
-        monitored_signal : in  unsigned;
-        crossed_trigger  : out std_logic
+      clk              : in  std_logic;
+      reset_n          : in  std_logic;
+      threshold        : in  unsigned;
+      ready            : in  std_logic;
+      monitored_signal : in  unsigned;
+      crossed_trigger  : out std_logic
     );
     end component;
   
@@ -186,37 +187,37 @@ package body ece383_pkg is
   -- Function to extract the red component
   function Get_Red(rgb : std_logic_vector(23 downto 0)) return std_logic_vector is
   begin
-      return rgb(23 downto 16); -- Red slice
+    return rgb(23 downto 16); -- Red slice
   end function;
   
   -- Function to extract the green component
   function Get_Green(rgb : std_logic_vector(23 downto 0)) return std_logic_vector is
   begin
-      return rgb(15 downto 8); -- Green slice
+    return rgb(15 downto 8); -- Green slice
   end function;
   
   -- Function to extract the blue component
   function Get_Blue(rgb : std_logic_vector(23 downto 0)) return std_logic_vector is
   begin
-      return rgb(7 downto 0); -- Blue slice
+    return rgb(7 downto 0); -- Blue slice
   end function;
   
   -- Shifts the input_vector by 2^n-1, causing signed numbers to shift to an unsigned range
   function make_unsigned(input_vector : std_logic_vector) return std_logic_vector is
-      variable result : std_logic_vector(input_vector'range);
+    variable result : std_logic_vector(input_vector'range);
   begin
-      result := input_vector;
-      result(result'high) := not input_vector(result'high);  -- Invert the MSB, effectively adding 2^(n-1)
-      return result;
+    result := input_vector;
+    result(result'high) := not input_vector(result'high);  -- Invert the MSB, effectively adding 2^(n-1)
+    return result;
   end function;
 
   -- Applies an offset to center the signal on the horizontal axis
   function apply_offset(input_vector: std_logic_vector) return unsigned is
-      variable result: unsigned(input_vector'range);
-      constant offset: unsigned := to_unsigned(292,9); -- Change this to your desired offset
+    variable result: unsigned(input_vector'range);
+    constant offset: unsigned := to_unsigned(46,10); -- Change this to your desired offset
   begin
-      result := unsigned(input_vector) - offset;        
-      return result;
+    result := unsigned(input_vector) - offset;        
+    return result;
   end function;
 
 end package body ece383_pkg;
