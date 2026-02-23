@@ -82,12 +82,15 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/ece383_pkg.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/dvid.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/i2s_ctl.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/tdms.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga.vhd

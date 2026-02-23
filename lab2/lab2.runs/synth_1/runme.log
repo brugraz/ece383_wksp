@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Feb 18 12:31:04 2026
+  **** Start of session at: Sun Feb 22 19:20:09 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,38 +25,81 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28748
+INFO: [Synth 8-7075] Helper process launched with PID 32524
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.199 ; gain = 469.590
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1016.426 ; gain = 470.637
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab2' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:23]
-INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:40]
-INFO: [Synth 8-3491] module 'trigger_detector' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd:9' bound to instance 'trig_detect' of component 'trigger_detector' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:148]
+INFO: [Synth 8-638] synthesizing module 'lab2' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:25]
+INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:41]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:22' bound to instance 'debouncer_UP' of component 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:190]
+INFO: [Synth 8-638] synthesizing module 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:29]
+	Parameter N bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'lec10' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'lec10' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:33]
+	Parameter N bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:29]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:22' bound to instance 'debouncer_LEFT' of component 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:196]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:22' bound to instance 'debouncer_DOWN' of component 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:202]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:22' bound to instance 'debouncer_RIGHT' of component 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:208]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:22' bound to instance 'debouncer_CENTER' of component 'button_debounce' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:214]
+	Parameter num_bits bound to: 11 - type: integer 
+	Parameter max_value bound to: 420 - type: integer 
+	Parameter min_value bound to: 20 - type: integer 
+	Parameter delta bound to: 10 - type: integer 
+	Parameter init_val bound to: 220 - type: integer 
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:8' bound to instance 'stepper_volt' of component 'numeric_stepper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:223]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:26]
+	Parameter num_bits bound to: 11 - type: integer 
+	Parameter max_value bound to: 420 - type: integer 
+	Parameter min_value bound to: 20 - type: integer 
+	Parameter delta bound to: 10 - type: integer 
+	Parameter init_val bound to: 220 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:26]
+	Parameter num_bits bound to: 11 - type: integer 
+	Parameter max_value bound to: 620 - type: integer 
+	Parameter min_value bound to: 20 - type: integer 
+	Parameter delta bound to: 15 - type: integer 
+	Parameter init_val bound to: 320 - type: integer 
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:8' bound to instance 'stepper_time' of component 'numeric_stepper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:240]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:26]
+	Parameter num_bits bound to: 11 - type: integer 
+	Parameter max_value bound to: 620 - type: integer 
+	Parameter min_value bound to: 20 - type: integer 
+	Parameter delta bound to: 15 - type: integer 
+	Parameter init_val bound to: 320 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized1' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/numeric_stepper.vhd:26]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'lec10' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:24' bound to instance 'address_counter' of component 'lec10' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:263]
+INFO: [Synth 8-638] synthesizing module 'lec10__parameterized1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:33]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lec10__parameterized1' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/lec10.vhdl:33]
+INFO: [Synth 8-3491] module 'trigger_detector' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd:9' bound to instance 'trig_detect' of component 'trigger_detector' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:286]
 INFO: [Synth 8-638] synthesizing module 'trigger_detector' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd:20]
-INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:161]
+INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:298]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-31396-C27-5CG31326ZG/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:51]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-31396-C27-5CG31326ZG/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-16860-C27-5CG31326ZG/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:51]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-16860-C27-5CG31326ZG/realtime/clk_wiz_0_stub.vhdl:19]
 INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:62]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga.vhd:21]
 INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:8' bound to instance 'vga_sig_gen' of component 'vga_signal_generator' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga.vhd:28]
 INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:15]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:34' bound to instance 'h_counter' of component 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:44]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:15' bound to instance 'h_counter' of component 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:27]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:27]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:34' bound to instance 'v_counter' of component 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:44]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:15' bound to instance 'v_counter' of component 'counter' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:27]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/counter.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga_signal_generator.vhd:15]
 INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd:15' bound to instance 'colormap' of component 'color_mapper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/vga.vhd:36]
 INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd:23]
@@ -90,7 +133,7 @@ INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:
 INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:100]
 INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:102]
 INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl:22]
-INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:180]
+INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:309]
 INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:53]
 INFO: [Synth 8-3491] module 'audio_init' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:143]
 INFO: [Synth 8-6157] synthesizing module 'audio_init' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:24]
@@ -104,8 +147,8 @@ INFO: [Synth 8-226] default block is never used [C:/Users/C27Bruno.Graziano/ece3
 INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd:119]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:151]
 INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:24]
-INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-31396-C27-5CG31326ZG/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-31396-C27-5CG31326ZG/realtime/clk_wiz_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-16860-C27-5CG31326ZG/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/.Xil/Vivado-16860-C27-5CG31326ZG/realtime/clk_wiz_1_stub.vhdl:18]
 	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:157]
 INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/i2s_ctl.vhd:63]
@@ -748,12 +791,12 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd:53]
-	Parameter caged_RW_width bound to: 16 - type: integer 
-	Parameter caged_pos_bitwidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_macro_cage' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:37' bound to instance 'leftChannelMemory' of component 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:202]
-INFO: [Synth 8-638] synthesizing module 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:52]
-	Parameter caged_RW_width bound to: 16 - type: integer 
-WARNING: [Synth 8-3819] Generic 'caged_pos_bitwidth' not present in instantiated entity will be ignored [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:202]
+	Parameter caged_RW_WIDTH bound to: 16 - type: integer 
+	Parameter caged_RWADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_macro_cage' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:13' bound to instance 'leftChannelMemory' of component 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:327]
+INFO: [Synth 8-638] synthesizing module 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:29]
+	Parameter caged_RW_WIDTH bound to: 16 - type: integer 
+	Parameter caged_RWADDR_WIDTH bound to: 10 - type: integer 
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -827,7 +870,7 @@ WARNING: [Synth 8-3819] Generic 'caged_pos_bitwidth' not present in instantiated
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'caged' of component 'BRAM_SDP_MACRO' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:56]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'bram' of component 'BRAM_SDP_MACRO' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:32]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -1072,15 +1115,15 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'BRAM_macro_cage' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:52]
-	Parameter caged_RW_width bound to: 16 - type: integer 
-	Parameter caged_pos_bitwidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_macro_cage' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:37' bound to instance 'rightChannelMemory' of component 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:217]
-INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:40]
-INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_macro_cage' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:29]
+	Parameter caged_RW_WIDTH bound to: 16 - type: integer 
+	Parameter caged_RWADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_macro_cage' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd:13' bound to instance 'rightChannelMemory' of component 'BRAM_macro_cage' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:341]
+INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:41]
+INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:21' bound to instance 'control' of component 'lab2_fsm' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd:25]
 WARNING: [Synth 8-3848] Net crossed_trigger in module/entity trigger_detector does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/trigger_detector.vhd:16]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd:76]
 WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd:73]
@@ -1088,31 +1131,12 @@ WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [
 WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd:313]
 WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:135]
 WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/audio_init.v:150]
-WARNING: [Synth 8-3848] Net sw_last_address in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:78]
+WARNING: [Synth 8-3848] Net sw_last_address in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:96]
 WARNING: [Synth 8-3848] Net Lbus_out in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:34]
 WARNING: [Synth 8-3848] Net Rbus_out in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:34]
-WARNING: [Synth 8-3848] Net flagQ in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:36]
-WARNING: [Synth 8-3848] Net ch1[to_ac] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch2[to_ac] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net trigger[t] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:87]
-WARNING: [Synth 8-3848] Net trigger[v] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:87]
-WARNING: [Synth 8-3848] Net ch1[incoming_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch1[current_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch1[to_bram] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch2[incoming_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch2[current_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net ch2[to_bram] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:85]
-WARNING: [Synth 8-3848] Net cw in module/entity lab2_fsm does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:26]
-WARNING: [Synth 8-7129] Port cw[2] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[0] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reset_n in module lab2_fsm is either unconnected or has no load
+WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:104]
+WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:104]
 WARNING: [Synth 8-7129] Port sw[2] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[0] in module lab2_fsm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port MM_I in module i2s_ctl is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][17] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][16] in module color_mapper is either unconnected or has no load
@@ -1205,20 +1229,27 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][12] in module color_mapper is either u
 WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][9] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][8] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][7] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][6] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][5] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][4] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][3] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][2] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.469 ; gain = 589.859
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1139.051 ; gain = 593.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.469 ; gain = 589.859
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1139.051 ; gain = 593.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.469 ; gain = 589.859
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1139.051 ; gain = 593.262
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1135.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1139.051 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -1240,24 +1271,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1231.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1230.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1231.812 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1230.883 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1231.812 ; gain = 686.203
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1230.883 ; gain = 685.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1231.812 ; gain = 686.203
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1230.883 ; gain = 685.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1267,9 +1298,23 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/User
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/Audio_Codec/audiocodec_master_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1231.812 ; gain = 686.203
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1230.883 ; gain = 685.094
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lab2_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   init0 |                              000 |                              000
+            waitforpress |                              001 |                              001
+           pressin_delay |                              010 |                              010
+              waitforrel |                              011 |                              011
+          pressout_delay |                              100 |                              101
+                     act |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'button_debounce'
+WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl:61]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1284,10 +1329,19 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICt
                   ststop |                             1100 |                             0101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl'
-WARNING: [Synth 8-327] inferring latch for variable 'ch1_reg[active]' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:98]
-WARNING: [Synth 8-327] inferring latch for variable 'ch2_reg[active]' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:99]
+WARNING: [Synth 8-327] inferring latch for variable 'ch1_reg[active]' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:138]
+WARNING: [Synth 8-327] inferring latch for variable 'ch2_reg[active]' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_datapath.vhdl:141]
+WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2_fsm.vhdl:77]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          wait_for_ready |                              001 |                               00
+       wr_sampleandcount |                              010 |                               01
+         wr_load_restart |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lab2_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.812 ; gain = 686.203
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1230.883 ; gain = 685.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1299,7 +1353,8 @@ Detailed RTL Component Info :
 	   2 Input   18 Bit       Adders := 2     
 	   2 Input   13 Bit       Adders := 4     
 	   3 Input   13 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 7     
+	   2 Input   11 Bit       Adders := 7     
+	   2 Input   10 Bit       Adders := 8     
 	   2 Input    7 Bit       Adders := 5     
 	   2 Input    5 Bit       Adders := 2     
 	   8 Input    4 Bit       Adders := 3     
@@ -1316,36 +1371,47 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	               31 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
-	               10 Bit    Registers := 13    
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 14    
 	                8 Bit    Registers := 3     
 	                7 Bit    Registers := 3     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 27    
+	                1 Bit    Registers := 32    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 3     
 	   5 Input   24 Bit        Muxes := 1     
 	   2 Input   18 Bit        Muxes := 2     
-	   2 Input   10 Bit        Muxes := 11    
+	   2 Input   16 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 5     
+	   3 Input   10 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 12    
 	   4 Input   10 Bit        Muxes := 5     
-	   3 Input   10 Bit        Muxes := 2     
 	   5 Input   10 Bit        Muxes := 6     
 	   4 Input    9 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 6     
 	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 2     
 	   2 Input    7 Bit        Muxes := 8     
-	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 4     
 	   8 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 15    
 	   9 Input    4 Bit        Muxes := 1     
 	  21 Input    4 Bit        Muxes := 1     
-	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 40    
-	   4 Input    1 Bit        Muxes := 21    
-	   3 Input    1 Bit        Muxes := 5     
+	   6 Input    3 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 6     
+	   5 Input    2 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 27    
+	   6 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 49    
+	   3 Input    1 Bit        Muxes := 6     
 	   9 Input    1 Bit        Muxes := 1     
 	  10 Input    1 Bit        Muxes := 6     
 	  36 Input    1 Bit        Muxes := 1     
@@ -1365,27 +1431,32 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[2]) is unused and will be removed from module button_debounce.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module button_debounce.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module button_debounce.
+WARNING: [Synth 8-3332] Sequential element (cw_reg[1]) is unused and will be removed from module button_debounce.
+WARNING: [Synth 8-3332] Sequential element (cw_reg[0]) is unused and will be removed from module button_debounce.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1360.926 ; gain = 815.316
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:07 . Memory (MB): peak = 1355.043 ; gain = 809.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 1360.926 ; gain = 815.316
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 1371.258 ; gain = 825.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 1378.895 ; gain = 833.285
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:25 . Memory (MB): peak = 1475.672 ; gain = 929.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 1389.211 ; gain = 843.602
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 1475.676 ; gain = 929.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1403,37 +1474,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1453,32 +1524,34 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |clk_wiz_0_bbox |     1|
 |2     |clk_wiz_1_bbox |     1|
-|3     |CARRY4         |    36|
-|4     |LUT1           |    47|
-|5     |LUT2           |    78|
-|6     |LUT3           |    59|
-|7     |LUT4           |   107|
-|8     |LUT5           |    65|
-|9     |LUT6           |   172|
+|3     |CARRY4         |    52|
+|4     |LUT1           |    53|
+|5     |LUT2           |   185|
+|6     |LUT3           |   141|
+|7     |LUT4           |   134|
+|8     |LUT5           |    97|
+|9     |LUT6           |   248|
 |10    |ODDR2          |     4|
-|11    |RAMB18E1       |     2|
-|12    |FDRE           |   207|
-|13    |FDSE           |    25|
-|14    |LD             |     2|
-|15    |IBUF           |     3|
-|16    |IOBUF          |     2|
-|17    |OBUF           |     4|
-|18    |OBUFDS         |     4|
+|11    |RAMB18E1       |     4|
+|14    |FDRE           |   472|
+|15    |FDSE           |    25|
+|16    |LD             |     2|
+|17    |LDC            |     9|
+|18    |LDCP           |     1|
+|19    |IBUF           |    10|
+|20    |IOBUF          |     2|
+|21    |OBUF           |     9|
+|22    |OBUFDS         |     4|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 242 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1555.828 ; gain = 913.875
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1555.828 ; gain = 1010.219
+Synthesis finished with 0 errors, 0 critical warnings and 279 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:26 . Memory (MB): peak = 1624.047 ; gain = 986.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:32 . Memory (MB): peak = 1624.047 ; gain = 1078.258
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1560.980 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1629.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -1487,20 +1560,22 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1571.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.496 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 12 instances were transformed.
+  A total of 22 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   LD => LDCE: 2 instances
+  LDC => LDCE: 9 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: e4c8b679
+Synth Design complete | Checksum: e77d217d
 INFO: [Common 17-83] Releasing license: Synthesis
-109 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
+132 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:21 . Memory (MB): peak = 1571.254 ; gain = 1265.883
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1571.254 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:46 . Memory (MB): peak = 1639.496 ; gain = 1333.875
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1639.496 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/synth_1/lab2.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file lab2_utilization_synth.rpt -pb lab2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 18 12:32:45 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 22 19:22:04 2026...

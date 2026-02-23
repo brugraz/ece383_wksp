@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1771443057" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab2.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1771813202" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab2.dcp">
   <File Type="PA-TCL" Name="lab2.tcl"/>
   <File Type="REPORTS-TCL" Name="lab2_reports.tcl"/>
   <File Type="RDS-RDS" Name="lab2.vds"/>
@@ -46,6 +46,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/TWICtl.vhd"/>
         <Attr Name="ImportTime" Val="1739223464"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw7/button_debounce.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hw7/button_debounce.vhdl"/>
+        <Attr Name="ImportTime" Val="1770500930"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -98,6 +106,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw7/lec10.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hw7/lec10.vhdl"/>
+        <Attr Name="ImportTime" Val="1770497079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/numeric_stepper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/numeric_stepper.vhd"/>
+        <Attr Name="ImportTime" Val="1770078300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/lab2/tdms.vhdl">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/tdms.vhdl"/>
@@ -146,15 +170,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/lab2/numeric_stepper.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/numeric_stepper.vhd"/>
-        <Attr Name="ImportTime" Val="1770078300"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/lab2/vga_log_tb.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -199,9 +214,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>

@@ -120,22 +120,22 @@ begin
     --------------------------------------------------------------------------
     process (ac_lrclk_sig, clk)
     begin
-        if (rising_edge(clk)) then
+    if (rising_edge(clk)) then
 			if(reset_n = '0') then
-                ac_lrclk_count <= "0000";
-            elsif (ac_lrclk_sig = '1' and ac_lrclk_sig_prev = '0') then
-                if (ac_lrclk_count < "0111") then
-                    ac_lrclk_count <= std_logic_vector(unsigned(ac_lrclk_count) + 1);
-                else
-                    ac_lrclk_count <= "0000";
-                    ready_sig <= '1';
-                end if;
-                ac_lrclk_sig_prev <= ac_lrclk_sig;
-            else
-                ready_sig <= '0';
-                ac_lrclk_sig_prev <= ac_lrclk_sig;
-            end if;
+        ac_lrclk_count <= "0000";
+      elsif (ac_lrclk_sig = '1' and ac_lrclk_sig_prev = '0') then
+        if (ac_lrclk_count < "0111") then
+          ac_lrclk_count <= std_logic_vector(unsigned(ac_lrclk_count) + 1);
+        else
+          ac_lrclk_count <= "0000";
+          ready_sig <= '1';
         end if;
+        ac_lrclk_sig_prev <= ac_lrclk_sig;
+      else
+        ready_sig <= '0';
+        ac_lrclk_sig_prev <= ac_lrclk_sig;
+      end if;
+    end if;
     end process;
 
     reset <= not reset_n;                -- active high reset
