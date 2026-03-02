@@ -24,7 +24,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity lec10 is
 	generic (N: integer := 4);
 	Port(	clk: in  STD_LOGIC;
-			reset : in  STD_LOGIC;
+			reset_n : in  STD_LOGIC;
 			ctrl: in std_logic_vector(1 downto 0);
 			D: in unsigned (N-1 downto 0);
 			Q: out unsigned (N-1 downto 0));
@@ -47,7 +47,7 @@ begin
 	process(clk)
 	begin
 		if (rising_edge(clk)) then
-			if (reset = '0') then
+			if (reset_n = '0') then
 				processQ <= (others => '0');
 			elsif (ctrl = "01") then
 				processQ <= processQ + 1;

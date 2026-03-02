@@ -14,6 +14,11 @@ constant RDWRADDR_WIDTH     : integer := 10;
 constant AC_BUS_WIDTH       : integer := 18;
 constant READWRITE_WIDTH    : integer := 16;
 
+constant TRIGGERLOC_WIDTH  :  integer := 11;
+
+constant L2CW_WIDTH         : integer := 3;
+constant L2SW_WIDTH         : integer := 3;
+
 --= SUBTYPES/RECORDS =--
 subtype color_t is std_logic_vector(23 downto 0);
 
@@ -230,7 +235,7 @@ end function;
 -- Applies an offset to center the signal on the horizontal axis
 function apply_offset(input_vector: std_logic_vector) return unsigned is
   variable result: unsigned(input_vector'range);
-  constant offset: unsigned := to_unsigned(46,10); -- Change this to your desired offset
+  constant offset: unsigned := to_unsigned(36,RDWRADDR_WIDTH); -- Change this to your desired offset
 begin
   result := unsigned(input_vector) - offset;        
   return result;

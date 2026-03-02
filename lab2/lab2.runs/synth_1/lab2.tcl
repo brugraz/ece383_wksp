@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
@@ -80,7 +81,7 @@ read_verilog -library xil_defaultlib C:/Users/C27Bruno.Graziano/ece383_wksp/lab2
 read_vhdl -library xil_defaultlib {
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/Audio_Codec_Wrapper.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/ece383_pkg.vhd
-  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_cage.vhd
+  C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/new/BRAM_macro_wrapper.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/TWICtl.vhd
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/color_mapper.vhd

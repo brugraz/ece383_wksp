@@ -51,7 +51,7 @@ constant HASH_VERTICAL_SPACING : integer := 10;
 
 constant HORIZONTAL_GRIDBLOCK_PXW : integer := 60;
 constant VERTICAL_GRIDBLOCK_PXW   : integer := 50;
-constant TRIGGER_PXW : integer := 111;
+constant TRIGGER_PXW : integer := 11;
 constant H_HASH_WIDTH : integer := 3;
 constant V_HASH_WIDTH : integer := 3;
 

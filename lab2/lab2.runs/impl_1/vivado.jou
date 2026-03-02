@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Feb 22 19:22:15 2026
-# Process ID         : 24728
+# Start of session at: Sun Mar  1 16:40:44 2026
+# Process ID         : 24416
 # Current directory  : C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/impl_1
 # Command line       : vivado.exe -log lab2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab2.tcl -notrace
 # Log file           : C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.runs/impl_1/lab2.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16442 MB
-# Swap memory        : 15032 MB
-# Total Virtual      : 31475 MB
-# Available Virtual  : 11412 MB
+# Swap memory        : 16118 MB
+# Total Virtual      : 32561 MB
+# Available Virtual  : 5650 MB
 #-----------------------------------------------------------
 source lab2.tcl -notrace

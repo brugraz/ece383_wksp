@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab2_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ece383_pkg" />
+            <top_module name="glbl" />
+            <top_module name="lab2_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="479.001 ns"></ZoomEndTime>
+      <Cursor1Time time="10.818 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="83" />
+   <wvobject fp_name="/lab2_tb/sim_switch" type="array">
+      <obj_property name="ElementShortName">sim_switch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_switch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/sim_btn" type="array">
+      <obj_property name="ElementShortName">sim_btn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_btn[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/data" type="logic">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/data_period" type="other">
+      <obj_property name="ElementShortName">data_period</obj_property>
+      <obj_property name="ObjectShortName">data_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ac_mclk" type="logic">
+      <obj_property name="ElementShortName">ac_mclk</obj_property>
+      <obj_property name="ObjectShortName">ac_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ac_adc_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_adc_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_adc_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ac_dac_sdata" type="logic">
+      <obj_property name="ElementShortName">ac_dac_sdata</obj_property>
+      <obj_property name="ObjectShortName">ac_dac_sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ac_bclk" type="logic">
+      <obj_property name="ElementShortName">ac_bclk</obj_property>
+      <obj_property name="ObjectShortName">ac_bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ac_lrclk" type="logic">
+      <obj_property name="ElementShortName">ac_lrclk</obj_property>
+      <obj_property name="ObjectShortName">ac_lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/tmds" type="array">
+      <obj_property name="ElementShortName">tmds[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmds[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/tmdsb" type="array">
+      <obj_property name="ElementShortName">tmdsb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmdsb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/sw" type="array">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/cw" type="array">
+      <obj_property name="ElementShortName">cw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/btn" type="array">
+      <obj_property name="ElementShortName">btn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/switch" type="array">
+      <obj_property name="ElementShortName">switch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/exWrAddr" type="array">
+      <obj_property name="ElementShortName">exWrAddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">exWrAddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/exWen" type="logic">
+      <obj_property name="ElementShortName">exWen</obj_property>
+      <obj_property name="ObjectShortName">exWen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/exSel" type="logic">
+      <obj_property name="ElementShortName">exSel</obj_property>
+      <obj_property name="ObjectShortName">exSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/Lbus_out" type="array">
+      <obj_property name="ElementShortName">Lbus_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Lbus_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/Rbus_out" type="array">
+      <obj_property name="ElementShortName">Rbus_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Rbus_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/exLbus" type="array">
+      <obj_property name="ElementShortName">exLbus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">exLbus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/exRbus" type="array">
+      <obj_property name="ElementShortName">exRbus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">exRbus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/flagQ" type="logic">
+      <obj_property name="ElementShortName">flagQ</obj_property>
+      <obj_property name="ObjectShortName">flagQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/flagClear" type="logic">
+      <obj_property name="ElementShortName">flagClear</obj_property>
+      <obj_property name="ObjectShortName">flagClear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/dp_led" type="array">
+      <obj_property name="ElementShortName">dp_led[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dp_led[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/debutton_UP" type="logic">
+      <obj_property name="ElementShortName">debutton_UP</obj_property>
+      <obj_property name="ObjectShortName">debutton_UP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/debutton_LEFT" type="logic">
+      <obj_property name="ElementShortName">debutton_LEFT</obj_property>
+      <obj_property name="ObjectShortName">debutton_LEFT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/debutton_DOWN" type="logic">
+      <obj_property name="ElementShortName">debutton_DOWN</obj_property>
+      <obj_property name="ObjectShortName">debutton_DOWN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/debutton_RIGHT" type="logic">
+      <obj_property name="ElementShortName">debutton_RIGHT</obj_property>
+      <obj_property name="ObjectShortName">debutton_RIGHT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/debutton_CENTER" type="logic">
+      <obj_property name="ElementShortName">debutton_CENTER</obj_property>
+      <obj_property name="ObjectShortName">debutton_CENTER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/sw_ready" type="logic">
+      <obj_property name="ElementShortName">sw_ready</obj_property>
+      <obj_property name="ObjectShortName">sw_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/sw_last_address" type="logic">
+      <obj_property name="ElementShortName">sw_last_address</obj_property>
+      <obj_property name="ObjectShortName">sw_last_address</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/sw_trigger" type="logic">
+      <obj_property name="ElementShortName">sw_trigger</obj_property>
+      <obj_property name="ObjectShortName">sw_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/cw_counter_control" type="array">
+      <obj_property name="ElementShortName">cw_counter_control[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cw_counter_control[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/cw_write_en" type="logic">
+      <obj_property name="ElementShortName">cw_write_en</obj_property>
+      <obj_property name="ObjectShortName">cw_write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/wren_bram" type="logic">
+      <obj_property name="ElementShortName">wren_bram</obj_property>
+      <obj_property name="ObjectShortName">wren_bram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/counter_reset" type="logic">
+      <obj_property name="ElementShortName">counter_reset</obj_property>
+      <obj_property name="ObjectShortName">counter_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ch1" type="array">
+      <obj_property name="ElementShortName">ch1</obj_property>
+      <obj_property name="ObjectShortName">ch1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/ch2" type="array">
+      <obj_property name="ElementShortName">ch2</obj_property>
+      <obj_property name="ObjectShortName">ch2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/is_live" type="logic">
+      <obj_property name="ElementShortName">is_live</obj_property>
+      <obj_property name="ObjectShortName">is_live</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/trigger" type="array">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/num_stepper_t" type="array">
+      <obj_property name="ElementShortName">num_stepper_t[10:0]</obj_property>
+      <obj_property name="ObjectShortName">num_stepper_t[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/num_stepper_v" type="array">
+      <obj_property name="ElementShortName">num_stepper_v[10:0]</obj_property>
+      <obj_property name="ObjectShortName">num_stepper_v[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/writeCntr" type="array">
+      <obj_property name="ElementShortName">writeCntr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">writeCntr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/position" type="array">
+      <obj_property name="ElementShortName">position</obj_property>
+      <obj_property name="ObjectShortName">position</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/write_address" type="array">
+      <obj_property name="ElementShortName">write_address[9:0]</obj_property>
+      <obj_property name="ObjectShortName">write_address[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/CENTER_COLUMN" type="other">
+      <obj_property name="ElementShortName">CENTER_COLUMN</obj_property>
+      <obj_property name="ObjectShortName">CENTER_COLUMN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/CENTER_ROW" type="other">
+      <obj_property name="ElementShortName">CENTER_ROW</obj_property>
+      <obj_property name="ObjectShortName">CENTER_ROW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/HASH_SIZE" type="other">
+      <obj_property name="ElementShortName">HASH_SIZE</obj_property>
+      <obj_property name="ObjectShortName">HASH_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/HASH_HORIZONTAL_SPACING" type="other">
+      <obj_property name="ElementShortName">HASH_HORIZONTAL_SPACING</obj_property>
+      <obj_property name="ObjectShortName">HASH_HORIZONTAL_SPACING</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/HASH_VERTICAL_SPACING" type="other">
+      <obj_property name="ElementShortName">HASH_VERTICAL_SPACING</obj_property>
+      <obj_property name="ObjectShortName">HASH_VERTICAL_SPACING</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/GRID_START_ROW" type="other">
+      <obj_property name="ElementShortName">GRID_START_ROW</obj_property>
+      <obj_property name="ObjectShortName">GRID_START_ROW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/GRID_STOP_ROW" type="other">
+      <obj_property name="ElementShortName">GRID_STOP_ROW</obj_property>
+      <obj_property name="ObjectShortName">GRID_STOP_ROW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/GRID_START_COL" type="other">
+      <obj_property name="ElementShortName">GRID_START_COL</obj_property>
+      <obj_property name="ObjectShortName">GRID_START_COL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/GRID_STOP_COL" type="other">
+      <obj_property name="ElementShortName">GRID_STOP_COL</obj_property>
+      <obj_property name="ObjectShortName">GRID_STOP_COL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/STEPPER_NUM_BITS" type="other">
+      <obj_property name="ElementShortName">STEPPER_NUM_BITS</obj_property>
+      <obj_property name="ObjectShortName">STEPPER_NUM_BITS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/STEPPER_VOLT_bottomofscr" type="other">
+      <obj_property name="ElementShortName">STEPPER_VOLT_bottomofscr</obj_property>
+      <obj_property name="ObjectShortName">STEPPER_VOLT_bottomofscr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/STEPPER_volt_topofscr" type="other">
+      <obj_property name="ElementShortName">STEPPER_volt_topofscr</obj_property>
+      <obj_property name="ObjectShortName">STEPPER_volt_topofscr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/STEPPER_volt_DELTA" type="other">
+      <obj_property name="ElementShortName">STEPPER_volt_DELTA</obj_property>
+      <obj_property name="ObjectShortName">STEPPER_volt_DELTA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/stepper_time_rightofscr" type="other">
+      <obj_property name="ElementShortName">stepper_time_rightofscr</obj_property>
+      <obj_property name="ObjectShortName">stepper_time_rightofscr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/stepper_time_leftofscr" type="other">
+      <obj_property name="ElementShortName">stepper_time_leftofscr</obj_property>
+      <obj_property name="ObjectShortName">stepper_time_leftofscr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/stepper_time_delta" type="other">
+      <obj_property name="ElementShortName">stepper_time_delta</obj_property>
+      <obj_property name="ObjectShortName">stepper_time_delta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/stepper_volt_init_val" type="other">
+      <obj_property name="ElementShortName">stepper_volt_init_val</obj_property>
+      <obj_property name="ObjectShortName">stepper_volt_init_val</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/datapath/stepper_time_init_val" type="other">
+      <obj_property name="ElementShortName">stepper_time_init_val</obj_property>
+      <obj_property name="ObjectShortName">stepper_time_init_val</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/sw" type="array">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/cw" type="array">
+      <obj_property name="ElementShortName">cw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/cwOUT_WREN" type="logic">
+      <obj_property name="ElementShortName">cwOUT_WREN</obj_property>
+      <obj_property name="ObjectShortName">cwOUT_WREN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/cwOUT_WRDIS" type="logic">
+      <obj_property name="ElementShortName">cwOUT_WRDIS</obj_property>
+      <obj_property name="ObjectShortName">cwOUT_WRDIS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/HOLD_CW_L10CNTR" type="array">
+      <obj_property name="ElementShortName">HOLD_CW_L10CNTR[0:1]</obj_property>
+      <obj_property name="ObjectShortName">HOLD_CW_L10CNTR[0:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/COUNT_CW_L10CNTR" type="array">
+      <obj_property name="ElementShortName">COUNT_CW_L10CNTR[0:1]</obj_property>
+      <obj_property name="ObjectShortName">COUNT_CW_L10CNTR[0:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/LOAD_CW_L10CNTR" type="array">
+      <obj_property name="ElementShortName">LOAD_CW_L10CNTR[0:1]</obj_property>
+      <obj_property name="ObjectShortName">LOAD_CW_L10CNTR[0:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab2_tb/uut/control/CLEAR_CW_L10CNTR" type="array">
+      <obj_property name="ElementShortName">CLEAR_CW_L10CNTR[0:1]</obj_property>
+      <obj_property name="ObjectShortName">CLEAR_CW_L10CNTR[0:1]</obj_property>
+   </wvobject>
+</wave_config>

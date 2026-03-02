@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.numeric_std.all;
 library UNIMACRO;
 use UNIMACRO.vcomponents.all;	
 use work.ece383_pkg.all;
@@ -27,6 +28,9 @@ architecture behavior of lab2 is
 signal sw: std_logic_vector(2 downto 0);
 signal cw: std_logic_vector(2 downto 0);
 
+signal w_writecntr_dbg : unsigned(RDWRADDR_WIDTH-1 downto 0);
+
+
 component lab2_datapath Port(
   clk                : in  STD_LOGIC;
   reset_n            : in  STD_LOGIC;
@@ -49,14 +53,19 @@ component lab2_datapath Port(
   exLbus, exRbus     : in  std_logic_vector(READWRITE_WIDTH-1 downto 0);
   flagQ              : out std_logic;   
   flagClear          : in  std_logic;
-  dp_led             : out std_logic_vector(4 downto 0)); 
+  dp_led             : out std_logic_vector(4 downto 0); 
+  writeCntr_dbg : out unsigned(RDWRADDR_WIDTH-1 downto 0));
+  
+  
 end component;
 
 component lab2_fsm Port(
   clk     : in  STD_LOGIC;
   reset_n : in  STD_LOGIC;
   sw      : in  STD_LOGIC_VECTOR(2 downto 0);
-  cw      : out STD_LOGIC_VECTOR(2 downto 0));
+  cw      : out STD_LOGIC_VECTOR(2 downto 0);
+    writeCntr_dbg : in unsigned(RDWRADDR_WIDTH-1 downto 0));
+
 end component;
 
 begin
@@ -86,14 +95,16 @@ datapath: lab2_datapath Port map(
   exRbus       => "0000000000000000",		
   flagQ        => OPEN,
   flagClear    => '0',
-  dp_led       => led
+  dp_led       => led,
+  writeCntr_dbg => w_writeCntr_dbg
 );
   
 control: lab2_fsm port map( 
   clk     => clk,
   reset_n => reset_n,
   sw      => sw,
-  cw      => cw
+  cw      => cw,
+  writecntr_dbg => w_writecntr_dbg
 );
 
 end behavior;

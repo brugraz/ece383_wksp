@@ -35,23 +35,24 @@ entity lab2_datapath is Port (
   exLbus, exRbus     : in    std_logic_vector(READWRITE_WIDTH-1 downto 0);
   flagQ              : out   std_logic;   
   flagClear          : in    std_logic;
-  dp_led             : out   std_logic_vector(4 downto 0));
+  dp_led             : out   std_logic_vector(4 downto 0);
+  writeCntr_dbg : out unsigned(RDWRADDR_WIDTH-1 downto 0));
 end lab2_datapath;
 
 architecture lab2_datapath_arch of lab2_datapath is
  
-component BRAM_macro_cage is 
+component BRAM_macro_wrapper is 
 Generic(
-  caged_RW_WIDTH     : integer := READWRITE_WIDTH;
-  caged_RWADDR_WIDTH : integer := RDWRADDR_WIDTH);
+  wrap_RW_WIDTH     : integer := READWRITE_WIDTH;
+  wrap_RWADDR_WIDTH : integer := RDWRADDR_WIDTH);
 Port(
-  caged_DATAOUT : OUT std_logic_vector(caged_RW_WIDTH-1 downto 0);
-  caged_RDADDR  : IN  std_logic_vector(caged_RWADDR_WIDTH-1 downto 0);-- Input address, width defined by port depth
-  caged_RW_CLK  : IN  std_logic;                   -- 1-bit input clock
-  caged_RST     : IN  std_logic;                   -- active high reset
-  caged_DATAIN  : IN  std_logic_vector(caged_RW_WIDTH-1 downto 0) := (others=>'0');                   -- Input data port, width defined by WRITE_WIDTH parameter
-  caged_WRADDR  : IN  std_logic_vector(caged_RWADDR_WIDTH-1 downto 0);           -- Input write address, width defined by write port depth
-  caged_WREN    : IN  std_logic);
+  wrap_DATAOUT : OUT std_logic_vector(wrap_RW_WIDTH-1 downto 0);
+  wrap_RDADDR  : IN  std_logic_vector(wrap_RWADDR_WIDTH-1 downto 0);-- Input address, width defined by port depth
+  wrap_RW_CLK  : IN  std_logic;                   -- 1-bit input clock
+  wrap_RST     : IN  std_logic;                   -- active high reset
+  wrap_DATAIN  : IN  std_logic_vector(wrap_RW_WIDTH-1 downto 0) := (others=>'0');                   -- Input data port, width defined by WRITE_WIDTH parameter
+  wrap_WRADDR  : IN  std_logic_vector(wrap_RWADDR_WIDTH-1 downto 0);           -- Input write address, width defined by write port depth
+  wrap_WREN    : IN  std_logic);
 end component;
  
 component Audio_Codec_Wrapper Port (
@@ -76,25 +77,25 @@ component lec10 is -- for address counter
 Generic(
   N     : integer := RDWRADDR_WIDTH);
 Port(
-  clk   : in  STD_LOGIC;
-  reset : in  STD_LOGIC;
-  ctrl  : in  STD_LOGIC_VECTOR(1 downto 0);
-  D     : in  unsigned(N-1 downto 0);
-  Q     : out unsigned(N-1 downto 0));
+  clk     : in  STD_LOGIC;
+  reset_n : in  STD_LOGIC;
+  ctrl    : in  STD_LOGIC_VECTOR(1 downto 0);
+  D       : in  unsigned(N-1 downto 0);
+  Q       : out unsigned(N-1 downto 0));
 end component;
 
 component button_debounce is Port(
-	clk    : in  STD_LOGIC;
-  reset  : in  STD_LOGIC;
-  button : in  STD_LOGIC;
-  action : out STD_LOGIC);
+	clk      : in  STD_LOGIC;
+  reset_n  : in  STD_LOGIC;
+  button   : in  STD_LOGIC;
+  action   : out STD_LOGIC);
 end component;
 
 signal debutton_UP, debutton_LEFT, debutton_DOWN, debutton_RIGHT, debutton_CENTER : std_logic;
   
-signal sw_ready           : std_logic;
-signal sw_last_address    : std_logic;
-signal sw_trigger         : std_logic;
+signal sw_ready           : std_logic := '0';
+signal sw_last_address    : std_logic := '0';
+signal sw_trigger         : std_logic := '1'; -- hard code until trig set up
 
 signal cw_counter_control : std_logic_vector(1 downto 0);
 signal cw_write_en        : std_logic := '0';
@@ -109,6 +110,7 @@ signal writeCntr          : unsigned(RDWRADDR_WIDTH-1 downto 0);
 signal position           : coordinate_t;
 signal reset              : std_logic;   
 signal write_address      : unsigned(RDWRADDR_WIDTH-1 downto 0);
+signal current_sample_trunc : unsigned(RDWRADDR_WIDTH-1 downto 0);
 
 constant CENTER_COLUMN            : integer := 320;
 constant CENTER_ROW               : integer := 220;
@@ -157,7 +159,7 @@ if (rising_edge(clk)) then
     ch1.to_ac    <= ch1.from_ac;
     ch2.to_ac    <= ch2.from_ac;
     ch1.incoming_sample <= ch1.from_ac( -- kick off least significant 2 bits
-     AC_BUS_WIDTH-1 downto AC_BUS_WIDTH-READWRITE_WIDTH);
+     AC_BUS_WIDTH-1 downto AC_BUS_WIDTH-READWRITE_WIDTH); -- make 17 downto 2 instead o
     ch2.incoming_sample <= ch2.from_ac(
      AC_BUS_WIDTH-1 downto AC_BUS_WIDTH-READWRITE_WIDTH);
   end if;
@@ -188,41 +190,41 @@ end process;
 -- If a button has been pressed then increment or decrement the trigger time and Volt
 --    should this be debounced?
 debouncer_UP : button_debounce Port map(
-	clk    => clk,
-  reset  => reset,
-  button => btn(UP),
-  action => debutton_UP
+	clk      => clk,
+  reset_n  => reset_n,
+  button   => btn(UP),
+  action   => debutton_UP
 );
 debouncer_LEFT : button_debounce Port map(
-	clk    => clk,
-  reset  => reset,
-  button => btn(LEFT),
-  action => debutton_LEFT
+	clk      => clk,
+  reset_n  => reset_n,
+  button   => btn(LEFT),
+  action   => debutton_LEFT
 );
 debouncer_DOWN : button_debounce Port map(
-	clk    => clk,
-  reset  => reset,
-  button => btn(DOWN),
-  action => debutton_DOWN
+	clk      => clk,
+  reset_n  => reset_n,
+  button   => btn(DOWN),
+  action   => debutton_DOWN
 );
 debouncer_RIGHT : button_debounce Port map(
-	clk    => clk,
-  reset  => reset,
-  button => btn(RIGHT),
-  action => debutton_RIGHT
+	clk      => clk,
+  reset_n  => reset_n,
+  button   => btn(RIGHT),
+  action   => debutton_RIGHT
 );
 debouncer_CENTER : button_debounce Port map(
-	clk    => clk,
-  reset  => reset,
-  button => btn(CENTER),
-  action => debutton_CENTER
+	clk      => clk,
+  reset_n  => reset_n,
+  button   => btn(CENTER),
+  action   => debutton_CENTER
 );
 
 ------------------------------------------------------------------------------
 -- Add numeric steppers for time and voltage trigger
 stepper_volt : numeric_stepper
 generic map(
-  num_bits   => STEPPER_NUM_BITS,
+  num_bits   => STEPPER_NUM_BITS, -- 11 bits
   max_value  => stepper_volt_bottomofscr,
   min_value  => stepper_volt_topofscr,
   delta      => stepper_volt_delta,
@@ -265,15 +267,17 @@ Generic map(
   N => RDWRADDR_WIDTH
 )
 Port map(
-  clk => clk,
-  reset => reset,
-  ctrl => cw_counter_control,
-  D => to_unsigned(GRID_START_COL, RDWRADDR_WIDTH),
-  Q => writeCntr
+  clk     => clk,
+  reset_n => reset_n,
+  ctrl    => cw_counter_control,
+  D       => to_unsigned(GRID_START_COL, RDWRADDR_WIDTH),
+  Q       => writeCntr
 );
 
 -- logic to count the write address (columns incrementing)
-sw(bit_SW_LASTADDR) <= '1' when writeCntr = "1001101100" else '0'; -- it's 620 in decimal
+sw(bit_SW_LASTADDR) <= '1' when writeCntr = TO_UNSIGNED(GRID_STOP_COL, RDWRADDR_WIDTH) else '0'; -- it's 620 in decimal
+
+writeCntr_dbg <= writeCntr;
 
 write_address <= writeCntr when exSel = '0' else unsigned(exWrAddr);
 
@@ -282,13 +286,15 @@ write_address <= writeCntr when exSel = '0' else unsigned(exWrAddr);
 --	less than the trigger and the current value is greater than or equal to
 -- the trigger.  Set the status word to alert the FSM that it should start 
 -- recording the samples.
+current_sample_trunc <= unsigned(apply_offset('0' & ch1.current_sample(READWRITE_WIDTH-1 downto 7))); 
+-- unsigned(apply_offset('0' & ch1.current_sample(READWRITE_WIDTH-1 downto 7))), --unsigned(ch1.current_sample(READWRITE_WIDTH-1 downto 6)),
 -------------------------------------------------------------------------------		
-trig_detect : trigger_detector Port map (
+trig_detect_ch1 : trigger_detector Port map (
   clk              => clk,
   reset_n          => reset_n,
-  threshold        => "1", -- hardcode
+  threshold        => trigger.v(TRIGGERLOC_WIDTH-1 downto 1),
   ready            => sw_ready,
-  monitored_signal => "1", -- hardcode
+  monitored_signal => current_sample_trunc,
   crossed_trigger  => sw_trigger
 );
 
@@ -324,32 +330,32 @@ Audio_Codec : Audio_Codec_Wrapper Port map (
   sim_live => is_live
 );  --  '0' simulate audio; '1' live audio
 
-leftChannelMemory : BRAM_macro_cage
+leftChannelMemory : BRAM_macro_wrapper
 Generic map(
-  caged_RW_width     => READWRITE_WIDTH,
-  caged_RWADDR_WIDTH => RDWRADDR_WIDTH)
+  wrap_RW_width     => READWRITE_WIDTH,
+  wrap_RWADDR_WIDTH => RDWRADDR_WIDTH)
 Port map(
-  caged_DATAOUT => ch1.from_bram,
-  caged_RDADDR  => std_logic_vector(position.col), -- Input address, width defined by port depth
-  caged_RW_CLK  => clk,                            -- 1-bit input clock
-  caged_RST     => reset,                          -- active high reset
-  caged_DATAIN  => ch1.to_bram,                    -- Input data port, width defined by WRITE_WIDTH parameter
-  caged_WRADDR  => std_logic_vector(write_address),                  -- Input write address, width defined by write port depth
-  caged_WREN    => wren_bram
+  wrap_DATAOUT => ch1.from_bram,
+  wrap_RDADDR  => std_logic_vector(position.col), -- Input address, width defined by port depth
+  wrap_RW_CLK  => clk,                            -- 1-bit input clock
+  wrap_RST     => reset,                          -- active high reset
+  wrap_DATAIN  => ch1.to_bram,                    -- Input data port, width defined by WRITE_WIDTH parameter
+  wrap_WRADDR  => std_logic_vector(write_address),                  -- Input write address, width defined by write port depth
+  wrap_WREN    => wren_bram
 );
 
-rightChannelMemory : BRAM_macro_cage 
-  Generic map(
-  caged_RW_WIDTH     => READWRITE_WIDTH, 
-  caged_RWADDR_WIDTH => RDWRADDR_WIDTH) 
+rightChannelMemory : BRAM_macro_wrapper
+Generic map(
+  wrap_RW_WIDTH     => READWRITE_WIDTH, 
+  wrap_RWADDR_WIDTH => RDWRADDR_WIDTH) 
 Port map(
-  caged_DATAOUT => ch2.from_bram,
-  caged_RDADDR  => std_logic_vector(position.col),  -- Input address, width defined by port depth
-  caged_RW_CLK  => clk,                             -- 1-bit input clock
-  caged_RST     => reset,                           -- active high reset
-  caged_DATAIN  => ch2.to_bram,                     -- Input data port, width defined by WRITE_WIDTH parameter
-  caged_WRADDR  => std_logic_vector(write_address), --Input write address, width defined by write port depth
-  caged_WREN    => wren_bram
+  wrap_DATAOUT => ch2.from_bram,
+  wrap_RDADDR  => std_logic_vector(position.col),  -- Input address, width defined by port depth
+  wrap_RW_CLK  => clk,                             -- 1-bit input clock
+  wrap_RST     => reset,                           -- active high reset
+  wrap_DATAIN  => ch2.to_bram,                     -- Input data port, width defined by WRITE_WIDTH parameter
+  wrap_WRADDR  => std_logic_vector(write_address), --Input write address, width defined by write port depth
+  wrap_WREN    => wren_bram
 );
 
 -- concurrent

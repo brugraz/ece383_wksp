@@ -21,7 +21,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity button_debounce is
 	Port(	clk: in  STD_LOGIC;
-			reset : in  STD_LOGIC;
+			reset_n : in  STD_LOGIC;
 			button: in STD_LOGIC;
 			action: out STD_LOGIC);
 end button_debounce;
@@ -39,7 +39,7 @@ architecture behavior of button_debounce is
 	COMPONENT lec10    -- clock for 20 msec debounce delay
 		generic (N: integer := 4);
 		Port(	clk: in  STD_LOGIC;
-				reset : in  STD_LOGIC;
+				reset_n : in  STD_LOGIC;
 				ctrl: in std_logic_vector(1 downto 0);
 				D: in unsigned (N-1 downto 0);
 				Q: out unsigned (N-1 downto 0));
@@ -57,7 +57,7 @@ begin
     Generic map(N_BITS) 
 	PORT MAP (
           clk => clk,
-          reset => reset,
+          reset_n => reset_n,
 		  ctrl => cw,
           D => D,
           Q => Q
@@ -73,7 +73,7 @@ begin
    state_process: process(clk)
 	 begin
 		if (rising_edge(clk)) then
-			if (reset = '0') then 
+			if (reset_n = '0') then 
 				state <= Init0;
 			else
 				case state is
