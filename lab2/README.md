@@ -8,7 +8,7 @@ Using the 640x480 VGA display and grid built in the last lab, the task at hand i
 
 ##### Diagrams
 
-![State Machine](/images/L2_FSM_Graziano.jpg)
+![State Machine](/images/L2_FSM_Graziano.jpeg)
 Finite state machine in the control unit.
 
 ##### Module Descriptions
