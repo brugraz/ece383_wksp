@@ -9,10 +9,9 @@ Using the 640x480 VGA display and grid built in the last lab, the task at hand i
 ##### Diagrams
 
 block diag here
+no time for images, sorry. they are uploaded with the code.
 
 state machine here
-
-state machine outs here
 
 ##### Module Descriptions
 
@@ -54,43 +53,24 @@ Also important to note is that read/write addresses to the BRAM are 10 bits long
 `flag_register`: For Lab 3.
 Input `flagClear` to reset the `flagQ` to 0, input `ready` (from `Audio_Codec`) to `set` (the input name on the register, it is not `ready`, it is `set`, but it is mapped to `ready`) the bit `Q`, which is mapped to `flagQ` an output also of the datapath itself.
 
-********remember to put the stuff in the folder code !
+#### Test/Debug
 
-Design/Implementation - Provide block-diagram of your solution using the signal names in your code. The block diagram given above is somewhat incomplete, so make sure to include corrections to it. Also, include a state transition diagram for your Lab2_cu. Note: the Mini-C design technique can be used but is NOT required. However, your instructor will expect you create Lab2_cu using the state machine coding style used in Lesson 9, with a process for state transitions, separated from a CSA LUT section for generating the output CWs. For each module that you built, explain its overall purpose, inputs, outputs, and behavior. Include all your vhdl files (code and testbench), wcfg file, and bit files. Put these in a folder called “code”.
+I mainly used bitstream generation and examining the VGA output to the screen, which given some distinct shapes of the simulation waves can be telling to what the problem is - for example if it is the still wave image from the BRAM's hex instantiation, I know my address counter is not counting, or the BRAM is continually being reset, or there is a freeze in the FSM, or anything that would make the address not count.
 
-Test/Debug - Briefly describe the methods used to verify system functionality. Include/discuss any testbench simulation plots you used. List the major problems you encountered and how you fixed them. This should cover all the problems you encountered in the lab and how you fixed them. Break each problem and solution into separate paragraphs.
+A possible solution to the above deserves a separate paragraph in that it is a very simple problem but hard to find if not looking for it. Make sure all component's reset ports are named according to whether they are active high or active low! If it is active low it should be called `reset_n`. Having a problem with this could result in a component being continuously reset and unusable.
+
+Check vector lengths - draw it out if it is helpful and line up the bits of each one being transferred down the datapath. There is a lot of mutation of the audio signals on its way to being compared for `chX.en`, and a lot of opportunity for error there.
+
+A new tool I used was Vivado's ILA which allowed a live signal to display while the programmed device is running. It was very useful for viewing states live which a friend's lab 2 test bench file could view non-live and so had limitations. A percieved limitation (I can't figure out how to get past it now) of the ILA is how short a time period its maximum sample period is - 131070, which is pretty long, but just short enough to not be able to see the counter roll over and the last address status word turn for the control unit to react. Being able to move the trigger to a far away time and sample the same amount of time would help with that. I did not solve the triggering problem I have, the wave will not trigger.
+
+#### Results
+
+Gate check 1,2,3: Did not finish on time. Finished GC 1, 2, and 3 at once. Uploaded demo video for GC 1 2 and 3. GC3 output BRAM instantiation. Was fixed shortly after that.
+
+A-Functionality (without the trigger): The B and required functionality did not mention anything about not having a working trigger, so I'll classify mine as A since I did all the A requirements though the trigger is a big one. The triggers move and are debounced but the wave does not stand still. There are two waves, channel 1 and channel 2, yellow and green, for left and right channels. My counter load value is 20, so my intersection value with the trigger should be row 20 if the trigger worked. Uploaded demo of that which was described.
 
 Results - This section should clearly state for each milestone/functionality the date/time it was achieved, level of achievement (e.g, achieved, partially-achieved, not achieved), what was achieved, and how you proved it (via demo or evidence like images/videos). For example, you could have a table like this:
 
-Milestone
+#### Conclusion
 
-Date/Time
-
-What was achieved
-
-Gate Check 1
-
-Achieved: demonstrated lab#1 worked with the two test signals in the BRAM displayed on scopeface monitor and buttons working
-
-Gate Check 2
-
-Achieved: Not demo’d to instructor. See video show the two simulated audio signals scrolling on monitor (not triggered)
-
-Gate Check 3
-
-Achieved: demo’d to instructor audio loopback test and the live audio waves scrolling on monitor
-
-Required Functionality
-
-Achieved, demo’d to instructor that audio waveform properly triggers at a set point on the display (not using trig_volt buttons). Code has separate FSM and datapath as required.
-
-B Functionality
-
-Partially Achieved: demo’d to instructor the 2nd channel working (see B_funct.jpg, showing sine wave on ch1 and triangle wave on ch2), however, never got the buttons to properly debounce.
-
-A Functionality
-
-Not Achieved
-
-Conclusion - Explain what your learned from this lab and what changes you would recommend in future years to this lab or the lectures leading up to this lab.
-hi sorry
+I learned on this lab more about interfacing with abstracted or more complex components. From Lab1, the only complex thing was the HDMI/DVID, but now we have the Audio codec and BRAM which both were best suited with wrappers, so it is good to have learned what wrappers are going forward, and it is very cool to now have made a real working (almost) oscilloscope that can view the waveform of any sound AUX input.
