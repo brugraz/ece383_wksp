@@ -2,7 +2,7 @@
 
 #### Introduction
 
-Using the 640x480 VGA display and grid built in the last lab, the task at hand is to make an oscilloscope that may display the waveform of a line-in (AUX) signal. The `video` entity from Lab 1 is contained in this lab, and all things in it, but that outside of `video` has edited and built upon. New components built by the student include a trigger detector, a write-address counter, and a flag register (which is a surprise tool that we'll save for later). New componenets pre-fabricated and interfaced by the student include an SDP (simple dual port) BRAM for the left and right audio signals, and an audio codec including its own BRAM. The result is a triggered waveform generated on our screen from any AUX audio signal.
+Using the 640x480 VGA display and grid built in the last lab, the task at hand is to make an oscilloscope that may display the waveform of a line-in (AUX) signal. The `video` entity from Lab 1 is contained in this lab, and all things in it, but that outside of `video` has been edited and built upon. New components built by the student include a trigger detector, a write-address counter, and a flag register (which is a surprise tool that we'll save for later). New componenets pre-fabricated and interfaced by the student include an SDP (simple dual port) BRAM for the left and right audio signals, and an audio codec including its own BRAM. The result is a triggered waveform generated on our screen from any AUX audio signal.
 
 #### Design/Implementation
 
