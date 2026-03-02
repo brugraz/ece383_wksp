@@ -8,7 +8,7 @@ Using the 640x480 VGA display and grid built in the last lab, the task at hand i
 
 ##### Diagrams
 
-![State Machine](/images/L2_FSM_Graziano.jpeg)
+![State Machine](images/L2_FSM_Graziano.jpeg)
 Finite state machine in the control unit.
 
 ##### Module Descriptions
@@ -63,12 +63,10 @@ A new tool I used was Vivado's ILA which allowed a live signal to display while 
 
 #### Results
 
-Gate check 1,2,3: Did not finish on time. Finished GC 1, 2, and 3 at once. Uploaded demo video for GC 1 2 and 3. GC3 output BRAM instantiation. Was fixed shortly after that.
+Gate check 1,2,3: Did not finish on time. Finished GC 1, 2, and 3 at once on 22 Feb 2026. Uploaded a demo video for GC 1 2 and 3. As shown in this video, it output only the BRAM instantiation pattern. It was fixed shortly after this submission to display the live signal.
 
-A-Functionality (without the trigger): The B and required functionality did not mention anything about not having a working trigger, so I'll classify mine as A since I did all the A requirements though the trigger is a big one. The triggers move and are debounced but the wave does not stand still. There are two waves, channel 1 and channel 2, yellow and green, for left and right channels. My counter load value is 20, so my intersection value with the trigger should be row 20 if the trigger worked. Uploaded demo of that which was described.
-
-Results - This section should clearly state for each milestone/functionality the date/time it was achieved, level of achievement (e.g, achieved, partially-achieved, not achieved), what was achieved, and how you proved it (via demo or evidence like images/videos). For example, you could have a table like this:
+A-Functionality (but without triggering): The B and required functionality did not mention any distinctions over whether the triggering works in the first place, so mine can be called an A since it has all A requirements besides the signal being triggered. The triggers move and are debounced but the wave does not stand still. There are two waves, channel 1 and channel 2, yellow and green, for left and right channels. My counter load value is 20, so my intersection value with the trigger should be row 20 if it worked. Uploaded demo of that which was described both playing a song on each channel and viewing a ~220 Hz pure sine on both channels.
 
 #### Conclusion
 
-I learned on this lab more about interfacing with abstracted or more complex components. From Lab1, the only complex thing was the HDMI/DVID, but now we have the Audio codec and BRAM which both were best suited with wrappers, so it is good to have learned what wrappers are going forward, and it is very cool to now have made a real working (almost) oscilloscope that can view the waveform of any sound AUX input.
+I learned on this lab more about interfacing with abstracted or more complex components. From Lab1, the only complex thing was the HDMI/DVID, but now we have the Audio codec and BRAM which both were best suited with wrappers, so it is good to have learned what wrappers are going forward, and it is very cool to now have made a real (almost) fully working oscilloscope that can view the waveform of any AUX input.
