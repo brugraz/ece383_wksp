@@ -8,10 +8,8 @@ Using the 640x480 VGA display and grid built in the last lab, the task at hand i
 
 ##### Diagrams
 
-block diag here
-no time for images, sorry. they are uploaded with the code.
-
-state machine here
+![State Machine](/images/L2_FSM_Graziano.jpg)
+Finite state machine in the control unit.
 
 ##### Module Descriptions
 
@@ -26,7 +24,7 @@ Input status word `sw(2:0)` and output control word `cw(2:0)`. My build also has
 `lab2_datapath`: Datapath module glues nearly everything together. The inputs are `clk`, `reset`, all audio codec inputs, inputs that are abstracted into being unused until Lab 3, to include `exWrAddr` (external write address), `exWen` (ext. write enable) and `exLBus` `exRBus` external buses for L and R audio, `exSel` or external select mapped to the third `switch`, and the `flagClear` bit for the flag register. Relevant inputs to Lab 2 are the `cw` from the control unit, `sim_live` which is the fourth `switch`, channel 1 and 2 enables (within `ch1` `ch2` records) to switches 2 and 1 (they're oriented 0 the rightmost on the board so we go backwards), and the directional buttons for moving the triggers. The center button `btn(4)` went unused.
 The outputs are all audio codec outputs, those being saved for later and unused like `tr_volt` (voltage trigger location), `tr_time` (time trigger location), `L_Bus_Out` `R_Bus_Out` for the audio (also outputs from the audio codec), `flaqQ` the Q of the flag register, and of course the HDMI `tmds` and `tmdsb` from the `video` component found below that lies in the datapath.
 The inputs and outputs that are being "saved for later" will be used with a soft processor capability called MicroBlaze, accessible through Vivado's service, which will allow us to dictate functionality through instructions (C, programming language) as opposed to entirely through hardware description. These external signals would be accessed through MicroBlaze's register file. There are multiplexers that tell whether to use the external or internal signals going into the `DATAIN` and `WREN` (see BRAM), whose select bit is the switch that selects whether to use external signals, and it will be useful in the next lab.
-The path of the data from the `Audio_Codec` to the `BRAM_SDP` will be told after the Audio Codec explanation and before the BRAM explainer so that it is readable. It will be through the `channel_t` clarifier below the part about `video`. The counter assembly (which includes its comparator and multiplexer, see the block diagram) will neither be explained now, even though it is not itself a whole component but a small component nearby two basic building blocks. It will help to explain it after the BRAM.
+The path of the data from the `Audio_Codec` to the `BRAM_SDP` will be told after the Audio Codec explanation and before the BRAM explainer so that it is readable. It will be through the `channel_t` clarifier below the part about `video`. The counter assembly (which includes its comparator and multiplexer for the write address, see the block diagram) will neither be explained now, even though it is not itself a whole component but a small component nearby two basic building blocks. It will help to explain it after the BRAM.
 
 `Audio_Codec`: Called as instantiated in the datapath, but the entity name itself is `Audio_Codec_Wrapper` because it is a wrapper for the AC having so many generics, successfully abstracting them, along with an instantiation of a BRAM that includes a wall of hexadecimal digits that is not advisable to have to scroll past while working the lab. A similar design choice will be made on the `BRAM_SDP` modules' instantions into the datapath.
 
