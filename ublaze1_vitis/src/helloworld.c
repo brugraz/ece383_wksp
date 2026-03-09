@@ -1,3 +1,4 @@
+
 /******************************************************************************
 * Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
 * SPDX-License-Identifier: MIT
@@ -26,8 +27,8 @@ int main()
 {
     init_platform();
 
-    print("hewwo :D\n\r");
-    print("Successfully ran (modified) Hello World application");
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
     cleanup_platform();
     return 0;
 }

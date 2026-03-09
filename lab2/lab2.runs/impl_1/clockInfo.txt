@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.2
-| Date         : Sun Mar  1 16:44:22 2026
+| Date         : Mon Mar  9 16:04:34 2026
 | Host         : C27-5CG31326ZG
-| Design       : checkpoint_lab2
+| Design       : design_1
 | Device       : xc7a200t-sbg484-1--
 -------------------------------------
 

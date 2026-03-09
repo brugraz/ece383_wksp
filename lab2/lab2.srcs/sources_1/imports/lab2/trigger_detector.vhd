@@ -10,7 +10,7 @@ use work.ece383_pkg.all;
 entity trigger_detector is Port (
   clk              : in  std_logic;
   reset_n          : in  std_logic;
-  threshold        : in  unsigned(RDWRADDR_WIDTH-1 downto 0);
+  threshold        : in  unsigned; --(RDWRADDR_WIDTH-1 downto 0);
   ready            : in  std_logic;
   monitored_signal : in  unsigned(RDWRADDR_WIDTH-1 downto 0);
   crossed_trigger  : out std_logic
@@ -39,6 +39,7 @@ if rising_edge(clk) then
 end if;
 end process;
 
-crossed_trigger <= '1' when monitored_signal <  threshold and previous >= threshold else '0';
+-- crossed_trigger <= '1' when monitored_signal <  threshold and previous >= threshold and ready = '1' else '0';
+crossed_trigger <= '1' when monitored_signal <  threshold and previous >= threshold and ready = '1' else '0';
 
 end architecture trigger_detector_arch;

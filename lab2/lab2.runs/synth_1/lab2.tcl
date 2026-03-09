@@ -99,15 +99,15 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/video.vhdl
   C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/imports/lab2/lab2.vhd
 }
-read_ip -quiet C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-
 read_ip -quiet C:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
+
+read_ip -quiet c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/C27Bruno.Graziano/ece383_wksp/lab2/lab2.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

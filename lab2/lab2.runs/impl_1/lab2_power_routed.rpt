@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Sun Mar  1 16:45:51 2026
+| Date             : Mon Mar  9 16:05:42 2026
 | Host             : C27-5CG31326ZG running 64-bit major release  (build 9200)
 | Command          : report_power -file lab2_power_routed.rpt -pb lab2_power_summary_routed.pb -rpx lab2_power_routed.rpx
 | Design           : lab2
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.543        |
+| Total On-Chip Power (W)  | 0.527        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.387        |
-| Device Static (W)        | 0.157        |
+| Dynamic (W)              | 0.374        |
+| Device Static (W)        | 0.153        |
 | Effective TJA (C/W)      | 3.3          |
-| Max Ambient (C)          | 83.2         |
-| Junction Temperature (C) | 26.8         |
+| Max Ambient (C)          | 83.3         |
+| Junction Temperature (C) | 26.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -49,25 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+--------------------------+-----------+----------+-----------+-----------------+
-| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
-+--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.015 |       11 |       --- |             --- |
-| Slice Logic              |     0.002 |     7963 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     2628 |    133800 |            1.96 |
-|   CARRY4                 |    <0.001 |      133 |     33450 |            0.40 |
-|   Register               |    <0.001 |     3659 |    267600 |            1.37 |
-|   LUT as Shift Register  |    <0.001 |      169 |     46200 |            0.37 |
-|   LUT as Distributed RAM |    <0.001 |       24 |     46200 |            0.05 |
-|   F7/F8 Muxes            |    <0.001 |       78 |    133800 |            0.06 |
-|   Others                 |     0.000 |      630 |       --- |             --- |
-| Signals                  |     0.004 |     6357 |       --- |             --- |
-| Block RAM                |     0.004 |       78 |       365 |           21.37 |
-| MMCM                     |     0.228 |        2 |        10 |           20.00 |
-| I/O                      |     0.135 |       30 |       285 |           10.53 |
-| Static Power             |     0.157 |          |           |                 |
-| Total                    |     0.543 |          |           |                 |
-+--------------------------+-----------+----------+-----------+-----------------+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.006 |       10 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1544 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      693 |    133800 |            0.52 |
+|   CARRY4       |    <0.001 |       56 |     33450 |            0.17 |
+|   Register     |    <0.001 |      524 |    267600 |            0.20 |
+|   Others       |     0.000 |       61 |       --- |             --- |
+| Signals        |    <0.001 |     1124 |       --- |             --- |
+| Block RAM      |     0.002 |        2 |       365 |            0.55 |
+| MMCM           |     0.228 |        2 |        10 |           20.00 |
+| I/O            |     0.135 |       30 |       285 |           10.53 |
+| Static Power   |     0.153 |          |           |                 |
+| Total          |     0.527 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -76,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.058 |       0.024 |      0.034 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.043 |       0.012 |      0.032 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.157 |       0.127 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.046 |       0.041 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.005 |       0.000 |      0.005 |       NA    | Unspecified | NA         |
@@ -85,7 +82,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -129,18 +126,17 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| Clock                                                                                      | Domain                                                                   | Constraint (ns) |
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| clk_out1_clk_wiz_0                                                                         | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0 |            40.0 |
-| clk_out1_clk_wiz_1                                                                         | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out1_clk_wiz_1     |            81.4 |
-| clk_out2_clk_wiz_0                                                                         | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0 |             8.0 |
-| clk_out2_clk_wiz_1                                                                         | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2_clk_wiz_1     |            20.0 |
-| clkfbout_clk_wiz_0                                                                         | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkfbout_clk_wiz_0 |            10.0 |
-| clkfbout_clk_wiz_1                                                                         | datapath/Audio_Codec/audiocodec_master_clock/inst/clkfbout_clk_wiz_1     |            10.0 |
-| datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1                                  | clk_IBUF_BUFG                                                            |            10.0 |
-| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK        |            33.0 |
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
+| Clock                                                         | Domain                                                                   | Constraint (ns) |
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
+| clk_out1_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0 |            40.0 |
+| clk_out1_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out1_clk_wiz_1     |            81.4 |
+| clk_out2_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0 |             8.0 |
+| clk_out2_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2_clk_wiz_1     |            20.0 |
+| clkfbout_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkfbout_clk_wiz_0 |            10.0 |
+| clkfbout_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clkfbout_clk_wiz_1     |            10.0 |
+| datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 | clk_IBUF_BUFG                                                            |            10.0 |
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -152,8 +148,8 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| lab2                               |     0.387 |
-|   datapath                         |     0.372 |
+| lab2                               |     0.374 |
+|   datapath                         |     0.371 |
 |     Audio_Codec                    |     0.125 |
 |       audio_inout                  |     0.001 |
 |       audiocodec_master_clock      |     0.123 |
@@ -164,15 +160,6 @@ Table of Contents
 |     video_inst                     |     0.242 |
 |       inst_dvid                    |     0.001 |
 |       mmcm_adv_inst_display_clocks |     0.107 |
-|   dbg_hub                          |     0.002 |
-|     inst                           |     0.002 |
-|       BSCANID.u_xsdbm_id           |     0.002 |
-|   u_ila_0                          |     0.008 |
-|     inst                           |     0.008 |
-|       ila_core_inst                |     0.008 |
-|   u_ila_1                          |     0.003 |
-|     inst                           |     0.003 |
-|       ila_core_inst                |     0.003 |
 +------------------------------------+-----------+
 
 

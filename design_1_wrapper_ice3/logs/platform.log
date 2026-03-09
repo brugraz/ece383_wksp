@@ -1,0 +1,1079 @@
+TRACE::2026-03-05.15:19:58::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:58::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:58::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:58::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:58::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-03-05.15:19:59::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3"
+		}]
+}
+TRACE::2026-03-05.15:19:59::SCWPlatform::Boot application domains not present, creating them
+TRACE::2026-03-05.15:19:59::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2026-03-05.15:19:59::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3"
+		}]
+}
+TRACE::2026-03-05.15:19:59::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3"
+		}]
+}
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:19:59::SCWDomain::checking for install qemu data   : 
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:19:59::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:19:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:19:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:19:59::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-03-05.15:19:59::SCWMssOS::No sw design opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::mss does not exists at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::Creating sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::Adding the swdes entry, created swdb C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::Writing mss at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:19:59::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:19:59::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-05.15:19:59::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-05.15:19:59::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:19:59::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2026-03-05.15:20:06::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-03-05.15:20:06::SCWMssOS::Writing the mss file completed C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-05.15:20:06::SCWPlatform::Started generating the artifacts platform design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:06::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-05.15:20:06::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper_ice3
+LOG::2026-03-05.15:20:06::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-05.15:20:06::SCWSystem::Not a boot domain 
+LOG::2026-03-05.15:20:06::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-05.15:20:06::SCWDomain::Generating domain artifcats
+TRACE::2026-03-05.15:20:06::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-05.15:20:06::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:20:06::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-05.15:20:06::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-05.15:20:06::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2026-03-05.15:20:06::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-05.15:20:06::SCWMssOS::Copying to export directory.
+TRACE::2026-03-05.15:20:06::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-05.15:20:06::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-05.15:20:06::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-05.15:20:06::SCWSystem::Completed Processing the sysconfig design_1_wrapper_ice3
+LOG::2026-03-05.15:20:06::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:06::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-05.15:20:06::SCWSystem::Writing the bif file for system config design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:06::SCWSystem::dir created 
+TRACE::2026-03-05.15:20:06::SCWSystem::Writing the bif 
+TRACE::2026-03-05.15:20:06::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-05.15:20:06::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-05.15:20:06::SCWPlatform::Completed generating the platform
+TRACE::2026-03-05.15:20:06::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-05.15:20:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-05.15:20:06::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:06::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:06::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:06::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:06::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-05.15:20:06::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-05.15:20:07::SCWPlatform::Started generating the artifacts platform design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:07::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-05.15:20:07::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper_ice3
+LOG::2026-03-05.15:20:07::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-05.15:20:07::SCWDomain::Generating domain artifcats
+TRACE::2026-03-05.15:20:07::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-05.15:20:07::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:20:07::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-05.15:20:07::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-05.15:20:07::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-05.15:20:07::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-05.15:20:07::SCWMssOS::Copying to export directory.
+TRACE::2026-03-05.15:20:07::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-05.15:20:07::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-05.15:20:07::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-05.15:20:07::SCWSystem::Completed Processing the sysconfig design_1_wrapper_ice3
+LOG::2026-03-05.15:20:07::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:07::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-05.15:20:07::SCWSystem::Writing the bif file for system config design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:07::SCWSystem::dir created 
+TRACE::2026-03-05.15:20:07::SCWSystem::Writing the bif 
+TRACE::2026-03-05.15:20:07::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-05.15:20:07::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-05.15:20:07::SCWPlatform::Completed generating the platform
+TRACE::2026-03-05.15:20:07::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-05.15:20:07::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:07::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:07::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:07::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:07::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:07::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-05.15:20:07::SCWPlatform::updated the xpfm file.
+LOG::2026-03-05.15:20:43::SCWPlatform::Started generating the artifacts platform design_1_wrapper_ice3
+TRACE::2026-03-05.15:20:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-05.15:20:43::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper_ice3
+LOG::2026-03-05.15:20:43::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-05.15:20:43::SCWSystem::Not a boot domain 
+LOG::2026-03-05.15:20:43::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-05.15:20:43::SCWDomain::Generating domain artifcats
+TRACE::2026-03-05.15:20:43::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-05.15:20:43::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-05.15:20:43::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:43::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:43::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:43::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:20:43::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:20:43::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:20:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:20:43::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:20:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:20:43::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:20:43::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:43::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:20:43::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:20:43::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-05.15:20:43::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-05.15:20:43::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-05.15:20:43::SCWMssOS::doing bsp build ... 
+TRACE::2026-03-05.15:20:43::SCWMssOS::System Command Ran  C: & cd  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-03-05.15:20:44::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-03-05.15:20:44::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-03-05.15:20:44::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-03-05.15:20:44::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-03-05.15:20:44::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/My_Counter_IP_v1_0/src"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::make -C microblaze_0/libsrc/My_Counter_IP_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar"
+TRACE::2026-03-05.15:20:44::SCWMssOS:: "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sectio
+TRACE::2026-03-05.15:20:44::SCWMssOS::ns -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-05.15:20:44::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-05.15:20:44::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-05.15:20:44::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:46::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-05.15:20:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2026-03-05.15:20:46::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2026-03-05.15:20:46::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/My_Counter_IP_v1_0/src"
+
+TRACE::2026-03-05.15:20:46::SCWMssOS::make -C microblaze_0/libsrc/My_Counter_IP_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-05.15:20:46::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-05.15:20:46::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:20:46::SCWMssOS::"Compiling My_Counter_IP..."
+
+ERROR::2026-03-05.15:20:46::SCWMssOS::Failed to build  the bsp sources for domain - standalone_microblaze_0
+ERROR::2026-03-05.15:20:46::SCWSystem::Error in Processing the domain standalone_microblaze_0
+LOG::2026-03-05.15:22:03::SCWPlatform::Started generating the artifacts platform design_1_wrapper_ice3
+TRACE::2026-03-05.15:22:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-05.15:22:03::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper_ice3
+LOG::2026-03-05.15:22:03::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-05.15:22:03::SCWSystem::Not a boot domain 
+LOG::2026-03-05.15:22:03::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-05.15:22:03::SCWDomain::Generating domain artifcats
+TRACE::2026-03-05.15:22:03::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-05.15:22:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-05.15:22:03::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:03::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:03::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:03::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:22:03::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:22:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:22:03::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:22:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:22:03::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:22:03::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:03::SCWMssOS::Completed writing the mss file at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-05.15:22:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-05.15:22:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-05.15:22:03::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-05.15:22:03::SCWMssOS::doing bsp build ... 
+TRACE::2026-03-05.15:22:03::SCWMssOS::System Command Ran  C: & cd  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-03-05.15:22:04::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -j 14 --no-print-directory par_libs
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-03-05.15:22:04::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-03-05.15:22:04::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-03-05.15:22:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-03-05.15:22:04::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-05.15:22:04::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-05.15:22:04::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2026-03-05.15:22:04::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2026-03-05.15:22:04::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-03-05.15:22:04::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2026-03-05.15:22:04::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-03-05.15:22:04::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-03-05.15:22:04::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-03-05.15:22:04::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2026-03-05.15:22:04::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-05.15:22:04::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-03-05.15:22:04::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2026-03-05.15:22:04::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-05.15:22:07::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-03-05.15:22:07::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-03-05.15:22:07::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-03-05.15:22:07::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2026-03-05.15:22:07::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2026-03-05.15:22:07::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2026-03-05.15:22:07::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2026-03-05.15:22:07::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2026-03-05.15:22:07::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2026-03-05.15:22:07::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2026-03-05.15:22:07::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2026-03-05.15:22:07::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2026-03-05.15:22:07::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2026-03-05.15:22:07::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2026-03-05.15:22:07::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2026-03-05.15:22:07::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2026-03-05.15:22:07::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+TRACE::2026-03-05.15:22:07::SCWMssOS::/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+TRACE::2026-03-05.15:22:07::SCWMssOS::aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_sutil.o microblaze_0/lib/xil_testcache.o microbl
+TRACE::2026-03-05.15:22:07::SCWMssOS::aze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xinterrupt_wrap.o microblaze
+TRACE::2026-03-05.15:22:07::SCWMssOS::_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xpm_init.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartl
+TRACE::2026-03-05.15:22:07::SCWMssOS::ite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib
+TRACE::2026-03-05.15:22:07::SCWMssOS::/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2026-03-05.15:22:07::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-03-05.15:22:08::SCWMssOS::Copying to export directory.
+TRACE::2026-03-05.15:22:09::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-05.15:22:09::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-05.15:22:09::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-05.15:22:09::SCWSystem::Completed Processing the sysconfig design_1_wrapper_ice3
+LOG::2026-03-05.15:22:09::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper_ice3
+TRACE::2026-03-05.15:22:09::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-05.15:22:09::SCWSystem::Writing the bif file for system config design_1_wrapper_ice3
+TRACE::2026-03-05.15:22:09::SCWSystem::dir created 
+TRACE::2026-03-05.15:22:09::SCWSystem::Writing the bif 
+TRACE::2026-03-05.15:22:09::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-05.15:22:09::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-05.15:22:09::SCWPlatform::Completed generating the platform
+TRACE::2026-03-05.15:22:09::SCWMssOS::Saving the mss changes C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-05.15:22:09::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-05.15:22:09::SCWMssOS::Commit changes completed.
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:22:09::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:22:09::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:22:09::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:22:09::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:22:09::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:22:09::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper_ice3",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper_ice3",
+	"platHandOff":	"C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/design_1_wrapper_ice3.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_ice3.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper_ice3",
+	"systems":	[{
+			"systemName":	"design_1_wrapper_ice3",
+			"systemDesc":	"design_1_wrapper_ice3",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper_ice3",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-05.15:22:09::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to open the hw design at C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA given C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA absoulate path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform::DSA directory C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Platform Path C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa
+TRACE::2026-03-05.15:22:09::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-05.15:22:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-03-05.15:22:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-05.15:22:09::SCWMssOS::Checking the sw design at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-05.15:22:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-05.15:22:09::SCWMssOS::Sw design exists and opened at  C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/microblaze_0/standalone_microblaze_0/bsp/system.mss

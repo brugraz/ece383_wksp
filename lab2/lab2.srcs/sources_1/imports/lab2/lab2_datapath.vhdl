@@ -121,6 +121,7 @@ constant GRID_START_ROW           : integer := 20;
 constant GRID_STOP_ROW            : integer := 420;
 constant GRID_START_COL           : integer := 20;
 constant GRID_STOP_COL            : integer := 620;
+constant COUNTER_END              : integer := 1024;
 
 constant STEPPER_NUM_BITS         : integer := RDWRADDR_WIDTH+1; -- trig stepper is 11 bits
 
@@ -133,6 +134,24 @@ constant stepper_time_delta       : integer := HASH_HORIZONTAL_SPACING;
 
 constant stepper_volt_init_val    : integer := CENTER_ROW;
 constant stepper_time_init_val    : integer := CENTER_COLUMN;
+
+--attribute mark_debug : string;
+--attribute keep       : string;
+
+--attribute mark_debug of trigger : signal is "true";
+--attribute keep       of trigger : signal is "true";
+
+--attribute mark_debug of write_address : signal is "true";
+--attribute keep       of write_address : signal is "true";
+
+--attribute mark_debug of current_sample_trunc : signal is "true";
+--attribute keep       of current_sample_trunc : signal is "true";
+
+--attribute mark_debug of ch1 : signal is "true";
+--attribute keep       of ch1 : signal is "true";
+
+--attribute mark_debug of ch2 : signal is "true";
+--attribute keep       of ch2 : signal is "true";
   
 begin
 
@@ -275,7 +294,7 @@ Port map(
 );
 
 -- logic to count the write address (columns incrementing)
-sw(bit_SW_LASTADDR) <= '1' when writeCntr = TO_UNSIGNED(GRID_STOP_COL, RDWRADDR_WIDTH) else '0'; -- it's 620 in decimal
+sw_last_address <= '1' when writeCntr = TO_UNSIGNED(COUNTER_END-1, RDWRADDR_WIDTH) else '0'; -- it's 620 in decimal
 
 writeCntr_dbg <= writeCntr;
 
@@ -292,7 +311,7 @@ current_sample_trunc <= unsigned(apply_offset('0' & ch1.current_sample(READWRITE
 trig_detect_ch1 : trigger_detector Port map (
   clk              => clk,
   reset_n          => reset_n,
-  threshold        => trigger.v(TRIGGERLOC_WIDTH-1 downto 1),
+  threshold        => trigger.v, --(TRIGGERLOC_WIDTH-1 downto 1),
   ready            => sw_ready,
   monitored_signal => current_sample_trunc,
   crossed_trigger  => sw_trigger

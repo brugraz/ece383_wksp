@@ -149,3 +149,321 @@ con
 
 14:14:45 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze1_vitis_system\_ide\scripts\systemdebugger_ublaze1_vitis_system_standalone.tcl'
 14:16:21 INFO  : Disconnected from the channel tcfchan#4.
+15:12:08 DEBUG : Logs will be stored at 'C:/Users/C27Bruno.Graziano/ece383_wksp/IDE.log'.
+15:12:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\C27Bruno.Graziano\ece383_wksp\temp_xsdb_launch_script.tcl
+15:12:16 INFO  : Platform repository initialization has completed.
+15:12:16 INFO  : Registering command handlers for Vitis TCF services
+15:12:18 INFO  : XSCT server has started successfully.
+15:12:26 INFO  : Successfully done setting XSCT server connection channel  
+15:12:26 INFO  : plnx-install-location is set to ''
+15:12:26 INFO  : Successfully done query RDI_DATADIR 
+15:12:26 INFO  : Successfully done setting workspace for the tool. 
+15:17:31 INFO  : Result from executing command 'getProjects': design_1_wrapper;design_1_wrapper_ice2
+15:17:31 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:17:31 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:17:32 INFO  : Platform 'design_1_wrapper_ice2' is added to custom repositories.
+15:17:35 INFO  : Platform 'design_1_wrapper_ice2' is added to custom repositories.
+15:24:12 INFO  : Result from executing command 'getProjects': design_1_wrapper;design_1_wrapper_ice2
+15:24:12 INFO  : Result from executing command 'getPlatforms': design_1_wrapper_ice2|C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/design_1_wrapper_ice2.xpfm;design_1_wrapper|C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:24:49 INFO  : Checking for BSP changes to sync application flags for project 'ublaze1_vitis'...
+15:25:18 INFO  : Checking for BSP changes to sync application flags for project 'ublaze2_vitis'...
+15:26:17 INFO  : Checking for BSP changes to sync application flags for project 'ublaze1_vitis'...
+15:26:25 INFO  : Checking for BSP changes to sync application flags for project 'ublaze2_vitis'...
+15:27:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:27:22 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:28:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:08 INFO  : Jtag cable 'Digilent Nexys Video 210276B7D0EDB' is selected.
+15:28:08 INFO  : 'jtag frequency' command is executed.
+15:28:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B7D0EDB" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B7D0EDB-13636093-0"}' command is executed.
+15:28:14 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit"
+15:28:14 INFO  : Context for processor 'microblaze_0' is selected.
+15:28:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa'.
+15:28:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:28:14 INFO  : Context for processor 'microblaze_0' is selected.
+15:28:14 INFO  : System reset is completed.
+15:28:17 INFO  : 'after 3000' command is executed.
+15:28:17 INFO  : Context for processor 'microblaze_0' is selected.
+15:28:17 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf' is downloaded to processor 'microblaze_0'.
+15:28:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B7D0EDB" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B7D0EDB-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf
+----------------End of Script----------------
+
+15:28:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:28:18 INFO  : 'con' command is executed.
+15:28:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:28:18 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze2_vitis_system\_ide\scripts\systemdebugger_ublaze2_vitis_system_standalone.tcl'
+15:31:09 INFO  : Disconnected from the channel tcfchan#2.
+15:31:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:31:27 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:44:40 DEBUG : Logs will be stored at 'C:/Users/C27Bruno.Graziano/ece383_wksp/IDE.log'.
+13:44:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\C27Bruno.Graziano\ece383_wksp\temp_xsdb_launch_script.tcl
+13:44:48 INFO  : XSCT server has started successfully.
+13:44:48 INFO  : Successfully done setting XSCT server connection channel  
+13:44:48 INFO  : plnx-install-location is set to ''
+13:44:48 INFO  : Successfully done setting workspace for the tool. 
+13:44:49 INFO  : Platform repository initialization has completed.
+13:44:50 INFO  : Registering command handlers for Vitis TCF services
+13:45:01 INFO  : Successfully done query RDI_DATADIR 
+13:52:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:52:58 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:55:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:55:48 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:58:53 INFO  : Checking for BSP changes to sync application flags for project 'ublaze2_vitis'...
+13:59:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:02 INFO  : Jtag cable 'Digilent Nexys Video 210276723478B' is selected.
+13:59:02 INFO  : 'jtag frequency' command is executed.
+13:59:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}' command is executed.
+13:59:08 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit"
+13:59:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa'.
+13:59:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:59:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:08 INFO  : System reset is completed.
+13:59:11 INFO  : 'after 3000' command is executed.
+13:59:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:11 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf' is downloaded to processor 'microblaze_0'.
+13:59:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf
+----------------End of Script----------------
+
+13:59:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:59:11 INFO  : 'con' command is executed.
+13:59:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:59:11 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze2_vitis_system\_ide\scripts\systemdebugger_ublaze2_vitis_system_standalone.tcl'
+14:14:54 INFO  : Checking for BSP changes to sync application flags for project 'ublaze2_vitis'...
+14:15:07 INFO  : Disconnected from the channel tcfchan#1.
+14:15:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:08 INFO  : Jtag cable 'Digilent Nexys Video 210276723478B' is selected.
+14:15:08 INFO  : 'jtag frequency' command is executed.
+14:15:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}' command is executed.
+14:15:13 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit"
+14:15:13 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa'.
+14:15:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:15:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:14 INFO  : System reset is completed.
+14:15:17 INFO  : 'after 3000' command is executed.
+14:15:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:17 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf' is downloaded to processor 'microblaze_0'.
+14:15:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze2_vitis/Debug/ublaze2_vitis.elf
+----------------End of Script----------------
+
+14:15:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:15:17 INFO  : 'con' command is executed.
+14:15:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:15:17 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze2_vitis_system\_ide\scripts\systemdebugger_ublaze2_vitis_system_standalone.tcl'
+15:20:06 INFO  : Result from executing command 'getProjects': design_1_wrapper;design_1_wrapper_ice2;design_1_wrapper_ice3
+15:20:06 INFO  : Result from executing command 'getPlatforms': 
+15:20:07 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:20:07 INFO  : Platform 'design_1_wrapper_ice3' is added to custom repositories.
+15:20:11 INFO  : Platform 'design_1_wrapper_ice3' is added to custom repositories.
+15:22:09 INFO  : Result from executing command 'getProjects': design_1_wrapper;design_1_wrapper_ice2;design_1_wrapper_ice3
+15:22:09 INFO  : Result from executing command 'getPlatforms': design_1_wrapper_ice2|C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice2/export/design_1_wrapper_ice2/design_1_wrapper_ice2.xpfm;design_1_wrapper|C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:22:14 INFO  : Checking for BSP changes to sync application flags for project 'ublaze3_vitis'...
+15:22:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:41 INFO  : Jtag cable 'Digilent Nexys Video 210276723478B' is selected.
+15:22:41 INFO  : 'jtag frequency' command is executed.
+15:22:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}' command is executed.
+15:22:46 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit"
+15:22:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa'.
+15:22:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:22:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:46 INFO  : System reset is completed.
+15:22:49 INFO  : 'after 3000' command is executed.
+15:22:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:49 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf' is downloaded to processor 'microblaze_0'.
+15:22:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf
+----------------End of Script----------------
+
+15:22:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:50 INFO  : 'con' command is executed.
+15:22:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:22:50 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze3_vitis_system\_ide\scripts\systemdebugger_ublaze3_vitis_system_standalone.tcl'
+15:31:22 INFO  : Checking for BSP changes to sync application flags for project 'ublaze3_vitis'...
+15:31:38 INFO  : Disconnected from the channel tcfchan#2.
+15:31:42 WARN  : channel "tcfchan#2" closed
+15:31:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:31:52 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:32:28 INFO  : Checking for BSP changes to sync application flags for project 'ublaze3_vitis'...
+15:32:32 INFO  : Checking for BSP changes to sync application flags for project 'ublaze3_vitis'...
+15:32:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:35 INFO  : Jtag cable 'Digilent Nexys Video 210276723478B' is selected.
+15:32:35 INFO  : 'jtag frequency' command is executed.
+15:32:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}' command is executed.
+15:32:40 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit"
+15:32:40 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa'.
+15:32:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:32:40 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:40 INFO  : System reset is completed.
+15:32:43 INFO  : 'after 3000' command is executed.
+15:32:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:43 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf' is downloaded to processor 'microblaze_0'.
+15:32:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf
+----------------End of Script----------------
+
+15:32:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:43 INFO  : 'con' command is executed.
+15:32:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:32:43 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze3_vitis_system\_ide\scripts\systemdebugger_ublaze3_vitis_system_standalone.tcl'
+15:33:39 INFO  : Disconnected from the channel tcfchan#5.
+15:33:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:39 INFO  : Jtag cable 'Digilent Nexys Video 210276723478B' is selected.
+15:33:39 INFO  : 'jtag frequency' command is executed.
+15:33:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}' command is executed.
+15:33:45 INFO  : Device configured successfully with "C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit"
+15:33:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa'.
+15:33:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:45 INFO  : System reset is completed.
+15:33:48 INFO  : 'after 3000' command is executed.
+15:33:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:48 INFO  : The application 'C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf' is downloaded to processor 'microblaze_0'.
+15:33:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723478B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276723478B-13636093-0"}
+fpga -file C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/_ide/bitstream/design_1_wrapper_ice3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Bruno.Graziano/ece383_wksp/design_1_wrapper_ice3/export/design_1_wrapper_ice3/hw/design_1_wrapper_ice3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3_vitis/Debug/ublaze3_vitis.elf
+----------------End of Script----------------
+
+15:33:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:48 INFO  : 'con' command is executed.
+15:33:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:33:48 INFO  : Launch script is exported to file 'C:\Users\C27Bruno.Graziano\ece383_wksp\ublaze3_vitis_system\_ide\scripts\systemdebugger_ublaze3_vitis_system_standalone.tcl'
+15:39:46 INFO  : Disconnected from the channel tcfchan#6.
