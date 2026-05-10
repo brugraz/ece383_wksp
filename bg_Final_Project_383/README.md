@@ -14,7 +14,7 @@ The Nexus Video's on-board DSP (digital signal processing) will be used in the c
 Here is the proposed architecture with both Frequency Discern and T9 modules, as well as display options. See how the two large modules divide into each's own datapath and control. "Tone Found?" is a bit telling whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished. 
 <br/><br/>
 Since the Frequency Discern unit is not working, those following modules were only minimally explored. LEDs were used to display the detected current key. Below is a full diagram of the project at the lower abstraction level.
-<img width="1355" height="1289" alt="freqdisc drawio" src="https://github.com/user-attachments/assets/1c958aaa-be49-40c7-944e-1c06c0c39866" />
+<img width="1355" height="1289" alt="freqdisc drawio (1)" src="https://github.com/user-attachments/assets/aa85b264-fb2c-49bd-ad23-2bc30620584c" />
 
 
 The "Found Tone" is 4 bits representing the value of a key, following the diagram below:
