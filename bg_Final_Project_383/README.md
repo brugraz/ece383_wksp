@@ -10,12 +10,12 @@ The Nexus Video's on-board DSP (digital signal processing) will be used in the c
 
 #### Detailed Architecture and Sub-System Design
 
-<img width="2400" height="1800" alt="level1shallow" src="https://github.com/user-attachments/assets/e1bb483e-754d-4eac-b048-650e37ba8197" />
-Here is the proposed architecture with both Frequency Discern and T9 modules, as well as display options. See how the two large modules divide into each's own datapath and control. "Tone Found?" is a bit telling whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished. 
+<img width="2400" height="1800" alt="level1shallownew" src="https://github.com/user-attachments/assets/cdb858fc-d3f1-4cf9-8db3-0e8990dbc227" />
+Here is the proposed architecture with all planned modules (Frequency Discern, T9, and Display Logic). See how the two large modules divide into each's own datapath and control. "Tone Found?" is a bit expressing whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished, and since the Frequency Discern unit is not fully working, those following modules were passed over, and LEDs were implemented to display the current detected key.
 <br/><br/>
-Since the Frequency Discern unit is not working, those following modules were only minimally explored. LEDs were used to display the detected current key. Below is a full diagram of the project at the lower abstraction level.
-<img width="1355" height="1289" alt="freqdisc drawio (1)" src="https://github.com/user-attachments/assets/aa85b264-fb2c-49bd-ad23-2bc30620584c" />
 
+<img width="1355" height="1289" alt="freqdisc drawio (1)" src="https://github.com/user-attachments/assets/aa85b264-fb2c-49bd-ad23-2bc30620584c" />
+An updated and lower level diagram of the entire project.
 
 The "Found Tone" is 4 bits representing the value of a key, following the diagram below:
 <img width="668" height="353" alt="keypad" src="https://github.com/user-attachments/assets/84f30301-74c1-4836-8ab7-8477e90b74b8" />
