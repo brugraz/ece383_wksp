@@ -8,8 +8,6 @@ use ieee.numeric_std.all;
 
 package fp_pkg is
 
-constant REG_LEN : integer := 32;
-
 -- row 1: 697 Hz -> 1.99168156679
 constant Hz_697 : integer := 697;
 -- row 2: 770 Hz -> 1.9898494165
@@ -29,15 +27,15 @@ constant Hz_1477 : integer := 1477;
 constant Hz_1633 : integer := 1633;
 
 -- coefficients 2cos(2pi*f_targ/Fs) with Fs = 48kHz, for the 8 frequencies.
-constant K_Row1 : signed(REG_LEN-1 downto 0) := x"7f77b5f6";
-constant K_Row2 : signed(REG_LEN-1 downto 0) := x"7f59b15e";
-constant K_Row3 : signed(REG_LEN-1 downto 0) := x"7f346c97";
-constant K_Row4 : signed(REG_LEN-1 downto 0) := x"7f07ba70";
+constant K_Row1 : signed(15 downto 0) := x"7f77";
+constant K_Row2 : signed(15 downto 0) := x"7f59";
+constant K_Row3 : signed(15 downto 0) := x"7f34";
+constant K_Row4 : signed(15 downto 0) := x"7f07";
 
-constant K_Col1 : signed(REG_LEN-1 downto 0) := x"7e668296";
-constant K_Col2 : signed(REG_LEN-1 downto 0) := x"7e0c3138";
-constant K_Col3 : signed(REG_LEN-1 downto 0) := x"7db5f2ee";
-constant K_Col4 : signed(REG_LEN-1 downto 0) := x"7d163655";
+constant K_Col1 : signed(15 downto 0) := x"7e66";
+constant K_Col2 : signed(15 downto 0) := x"7e0c";
+constant K_Col3 : signed(15 downto 0) := x"7db5";
+constant K_Col4 : signed(15 downto 0) := x"7d16";
 
 -- detection hex ID ordering, naming them.
 constant hexid_697 : std_logic_vector(1 downto 0) := "00";

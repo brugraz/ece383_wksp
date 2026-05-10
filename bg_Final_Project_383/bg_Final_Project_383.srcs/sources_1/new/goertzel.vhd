@@ -48,32 +48,34 @@ architecture Behavioral of goertzel is
   
   -- For Fs = 48kHz, the 8 DTMF frequencies: 
   -- 697, 770, 852, 941, 1209, 1336, 1477, 1633
-  -- "K" (or coefficent), Q16.16 = 2*cos(omega), with omega = 2*pi*f_target/Fs
-  -- K values only vary with target frequency, and were pre-calculated.
+  -- "K" (or coefficent), Q1.15 = 2*cos(omega), with omega = 2*pi*f_target/Fs
+  -- K values are < 2, only vary with target frequency, and were pre-calculated.
   -- their values seen in fp_pkg
-  signal K_Q0230 : signed(REG_LEN-1 downto 0);
+  
+  -- K: 16 bit Q2.14
+  -- x[n]: 16 bit signed Q 1.15 (normalized signed, -1 < x < 1)
+  -- state variable s[n]: 32 bit Q16.16 since with normalized x[n] can get to ~6500
+  
+  -- then s[n] = K * x[n] = Q3.29 ... we want Q16.16 so shift the Q3.29 right by 13 -> Q16.16 (lost 13 LSBs and we don't care)
+  
+  signal K_Q0214 : signed(15 downto 0);
+  signal x_Q0115 : signed(15 downto 0);
+  
   signal x_Q1616 : signed(31 downto 0);
+  signal s_Q1616 : signed(31 downto 0);
+  signal sprev_Q1616   : signed(31 downto 0);
+  signal sprev2_Q1616  : signed(31 downto 0);
   
+  -- intermediate s calc signals for K*s ...
+  signal K_sprev_raw_Q1830 : signed(47 downto 0);
+  signal K_sprev_Q1616     : signed(31 downto 0);
   
-  signal mulres_s_Q6630 : signed(95 downto 0);
-  
-  signal s_Q3232       : signed(63 downto 0);
-  signal s_prev_Q3232  : signed(63 downto 0) := (others => '0');
-  signal s_prev2_Q3232 : signed(63 downto 0) := (others => '0');
-  signal s_Q3200       : signed(31 downto 0);
-  signal s_prev_Q3200  : signed(31 downto 0) := (others => '0');
-  signal s_prev2_Q3200 : signed(31 downto 0) := (others => '0');
-  
-  signal addmulres_p_Q6400 : signed(63 downto 0); -- was 6500
-  signal addmulres_p_Q6630 : signed(95 downto 0);
-  signal p_out_Q6630    : signed(95 downto 0);
+  signal p_out_Q3232    : signed(63 downto 0);
   
 begin
 
-x_Q1616 <= x_b16 & x"0000"; -- add 16 bin fixed pts
-
 with f_target select
-K_Q0230 <= K_Row1 when Hz_697,
+K_Q0214 <= K_Row1 when Hz_697,
            K_Row2 when Hz_770,
            K_Row3 when Hz_852,
            K_Row4 when Hz_941,
@@ -84,40 +86,34 @@ K_Q0230 <= K_Row1 when Hz_697,
            (others => '0') when others;
 
 -- register process for s[n], s[n-1] and s[n-2]
--- concurrent truncations, shifts, multiply preps
-    mulres_s_Q6630 <= (K_Q0230*s_prev_Q3232);
-    s_Q3200 <= s_Q3232(63 downto 32);
--- truncate these things for a less onerous power calc
-    s_prev_Q3200 <= s_prev_Q3232(63 downto 32);
-    s_prev2_Q3200 <= s_prev2_Q3232(63 downto 32);
--- power calc prep
-    addmulres_p_Q6400 <= s_prev_Q3200*s_prev_Q3200 + s_prev2_Q3200*s_prev2_Q3200;
-    addmulres_p_Q6630 <= addmulres_p_Q6400 & x"00000000";
+-- concurrent truncations, shifts, multiplies
+K_sprev_raw_Q1830 <= sprev_Q1616*K_Q0214;
+K_sprev_Q1616 <= resize(shift_right(K_sprev_raw_Q1830, 14), 32);
+x_Q1616 <= shift_left(resize(x_Q0115, 32), 1);   -- resize first to keep MSB sign bit
 
 process(clk)
 begin
 if (rising_edge(clk)) then
-  if reset_n = '0' then
-    s_Q3232 <= (others => '0');
-    -- add others reset prev prev2
-  elsif cw(CW_DO_S_MATH) = '1' then
+  if cw(CW_DO_S_MATH) = '1' then
   
-    -- s[n] = x[n] + coef*s[n-1] - s[n-2]
-    s_Q3232 <= x_Q1616 + mulres_s_Q6630(63 downto 0) - s_prev2_Q3232; 
-    s_prev2_Q3232 <= s_prev_Q3232; -- turn s[n-2] into s[n-1]
-    s_prev_Q3232 <= s_Q3232;       -- turn s[n-1] into s[n]
+    -- state s[n] = x[n] + coef*s[n-1] - s[n-2]
+    s_Q1616 <= x_Q1616 + K_sprev_Q1616 - sprev2_Q1616; 
+    sprev2_Q1616 <= sprev_Q1616; -- turn s[n-2] into s[n-1]
+    sprev_Q1616 <= s_Q1616;       -- turn s[n-1] into s[n]
       
   elsif cw(CW_POWER_CALC_RST) = '1' then  -- window over, compute power
     
-    -- P = s[n-1]^2 + s[n-2]^2 - s[n-1]s[n-2]coeff  (rearranged Re^2 + Im^2)
-    -- power calc
-    p_out_Q6630 <= addmulres_p_Q6630 - s_prev_Q3200*s_prev2_Q3200*K_Q0230;
+    -- power P = s[n-1]^2 + s[n-2]^2 - Ks[n-1]s[n-2]  (rearranged Re^2 + Im^2)
+    p_out_Q3232 <= sprev_Q1616*sprev_Q1616 - K_sprev_Q1616*sprev2_Q1616;
     
+    if reset_n = '0' then
+      s_Q1616 <= (others => '0');
+      sprev_Q1616 <= (others => '0');
+      sprev2_Q1616 <= (others => '0');
+    end if;
   end if;
+  
 end if;
 end process;
-
--- out
-power_out_b64 <= p_out_Q6630(95 downto 32);
 
 end Behavioral;

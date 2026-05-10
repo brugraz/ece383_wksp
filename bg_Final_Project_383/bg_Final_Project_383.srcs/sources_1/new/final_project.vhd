@@ -153,35 +153,35 @@ end process;
 -- to be considered by the frequency discern module.
 
 -- LED display ASCII in place of T9 for req funct
---led <= UTF8_1 when key = (hexid_697 & hexid_1209) and found = '1' else
---       UTF8_2 when key = (hexid_697 & hexid_1336) and found = '1' else
---       UTF8_3 when key = (hexid_697 & hexid_1477) and found = '1' else
---       UTF8_A when key = (hexid_697 & hexid_1633) and found = '1' else
---       -- row 2
---       UTF8_4 when key = (hexid_770 & hexid_1209) and found = '1' else
---       UTF8_5 when key = (hexid_770 & hexid_1336) and found = '1' else
---       UTF8_6 when key = (hexid_770 & hexid_1477) and found = '1' else
---       UTF8_B when key = (hexid_770 & hexid_1633) and found = '1' else
---       -- row 3
---       UTF8_7 when key = (hexid_852 & hexid_1209) and found = '1' else
---       UTF8_8 when key = (hexid_852 & hexid_1336) and found = '1' else
---       UTF8_9 when key = (hexid_852 & hexid_1477) and found = '1' else
---       UTF8_C when key = (hexid_852 & hexid_1633) and found = '1' else
---       -- row 4
---       UTF8_star when key = (hexid_941 & hexid_1209) and found = '1' else
---       UTF8_0    when key = (hexid_941 & hexid_1336) and found = '1' else
---       UTF8_pnd  when key = (hexid_941 & hexid_1477) and found = '1' else
---       UTF8_D    when key = (hexid_941 & hexid_1633) and found = '1' else
+led <= UTF8_1 when key = (hexid_697 & hexid_1209) and found = '1' else
+       UTF8_2 when key = (hexid_697 & hexid_1336) and found = '1' else
+       UTF8_3 when key = (hexid_697 & hexid_1477) and found = '1' else
+       UTF8_A when key = (hexid_697 & hexid_1633) and found = '1' else
+       -- row 2
+       UTF8_4 when key = (hexid_770 & hexid_1209) and found = '1' else
+       UTF8_5 when key = (hexid_770 & hexid_1336) and found = '1' else
+       UTF8_6 when key = (hexid_770 & hexid_1477) and found = '1' else
+       UTF8_B when key = (hexid_770 & hexid_1633) and found = '1' else
+       -- row 3
+       UTF8_7 when key = (hexid_852 & hexid_1209) and found = '1' else
+       UTF8_8 when key = (hexid_852 & hexid_1336) and found = '1' else
+       UTF8_9 when key = (hexid_852 & hexid_1477) and found = '1' else
+       UTF8_C when key = (hexid_852 & hexid_1633) and found = '1' else
+       -- row 4
+       UTF8_star when key = (hexid_941 & hexid_1209) and found = '1' else
+       UTF8_0    when key = (hexid_941 & hexid_1336) and found = '1' else
+       UTF8_pnd  when key = (hexid_941 & hexid_1477) and found = '1' else
+       UTF8_D    when key = (hexid_941 & hexid_1633) and found = '1' else
        
---       x"00" when found = '0' else
---       x"FF"; -- error
+       x"00" when found = '0' else
+       x"FF"; -- error
          
-ja(5 downto 3) <= cwout;
+--ja(9 downto 7) <= cwout;
 ja(2 downto 1) <= swout;
-ja(6) <= found;
-ja(0) <= clk;
+ja(4) <= found;
+ja(3) <= clk;
 
-led <= test_C_max_P(63 downto 56);
+--led <= test_C_max_P(63 downto 56);
 
 
 end Behavioral;

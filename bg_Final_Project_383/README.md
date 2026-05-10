@@ -1,14 +1,32 @@
 ### Final Project: Dual-Tone Multi-Frequency Detector, C2C Bruno Graziano, ECE 383
 
-#### Updated Proposal (Objective Statement)
-The objective is to build a portable and standards-compliant dual-tone multi-frequency (DTMF) listener and alpha-numeric T9-type text editor (or, at least, a numeric-only entry system like on a landline) in order to communicate by text (or numerically) through sound. This is also to practice building with documentational clarity, modularity, and with user-configuration in mind.
+#### Proposal
+The objective is to build a portable and standards-compliant dual-tone multi-frequency (DTMF) listener and alpha-numeric T9-type text editor (or, at least, a numeric-only entry system like on a landline) in order to communicate by text through sound. This is also to practice building with documentational clarity, modularity, and with user-configuration in mind.
 
-The Nexus Video's on-board DSP (digital signal processing) will likely be used in the calculations required to discern the incoming DTMF, even if no "DSP" module is explicitly instantiated in the VHDL. The dotted lines are to say that at least one of these connected display devices would be integrated.
+<img width="520" height="266" alt="image" src="https://github.com/user-attachments/assets/da0e78fc-f273-4f3f-8e81-124df8ee4556" />
+Figure 1. High-level architecture of the DTMF detector.
+<br/><br/>
+The Nexus Video's on-board DSP (digital signal processing) will be used in the calculations (repeated multiplication) required to discern the incoming DTMF, even if no "DSP" module is explicitly instantiated in the VHDL. The dotted lines are to say that at least one of these connected display devices would be integrated. A microphone will also be used, integrated as an analog audio source.
 
 #### Detailed Architecture and Sub-System Design
-See how there are two large modules dividing into each's own datapath and control. "Tone Found?" a semaphore telling the Text Entry unit whether a DTMF tone (again, two specific frequencies) is currently being reliably detected... or in short, whether someone is entering something currently. The "Display Logic," if output to VGA, would be the "Video" module from Lab 1 which included the conversion from VGA RGB to HDMI. The box would fit whatever protocol is selected to be the display. This decision is to be deferred until after the Frequency Discern is finished. The "Found Tone" is 4 bits to contain the value of a single key, following the diagram below:
 
-![keypad](keypad.png)
+<img width="2400" height="1800" alt="level1shallownew" src="https://github.com/user-attachments/assets/cdb858fc-d3f1-4cf9-8db3-0e8990dbc227" />
+Figure 2. The proposed architecture with all planned modules (Frequency Discern, T9, and Display Logic) abstracted to datapath and control. See how the two large modules divide into each's own set of datapath and control. 
+
+<br/><br/>
+"Tone Found?" is a bit expressing whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished, and since the Frequency Discern unit is not fully working, those following modules were passed over, and LEDs were implemented to display the current detected key.
+<br/><br/>
+
+<img width="1488" height="1411" alt="freqdisc drawio" src="https://github.com/user-attachments/assets/7de9df4b-1573-492c-ba28-fd87b74fc757" />
+An updated, lower-level diagram of the entire project.
+
+The "Found Tone" is 4 bits representing the value of a key, following the diagram below:
+<img width="668" height="353" alt="keypad" src="https://github.com/user-attachments/assets/84f30301-74c1-4836-8ab7-8477e90b74b8" />
+
+
+
+
+
 
 
 \includegraphics[width=1\textwidth]{level1deep}

@@ -247,7 +247,7 @@ end process;
 
   -- check if meets threshold
 
-found <= '1' when c_max_P > x"0000FFFFFFFFFFFF" and r_max_P > x"0000FFFFFFFFFFFF" else '0';
+found <= '1' when c_max_P > x"00000000000FFFFF" and r_max_P > x"00000000000FFFFF" else '0';
 key <= r_which_max & c_which_max; -- convenient, isn't it?
 
 -- testing
