@@ -5,15 +5,25 @@ The objective is to build a portable and standards-compliant dual-tone multi-fre
 
 <img width="520" height="266" alt="image" src="https://github.com/user-attachments/assets/da0e78fc-f273-4f3f-8e81-124df8ee4556" />
 High-level architecture of the DTMF detector.
-
-
-
+<br/><br/>
 The Nexus Video's on-board DSP (digital signal processing) will be used in the calculations (repeated multiplication) required to discern the incoming DTMF, even if no "DSP" module is explicitly instantiated in the VHDL. The dotted lines are to say that at least one of these connected display devices would be integrated. A microphone will also be used, integrated as an analog audio source.
 
 #### Detailed Architecture and Sub-System Design
-See how there are two large modules dividing into each's own datapath and control. "Tone Found?" a semaphore telling the Text Entry unit whether a DTMF tone (again, two specific frequencies) is currently being reliably detected... or in short, whether someone is entering something currently. The "Display Logic," if output to VGA, would be the "Video" module from Lab 1 which included the conversion from VGA RGB to HDMI. The box would fit whatever protocol is selected to be the display. This decision is to be deferred until after the Frequency Discern is finished. The "Found Tone" is 4 bits to contain the value of a single key, following the diagram below:
 
+<img width="2400" height="1800" alt="level1shallow" src="https://github.com/user-attachments/assets/e1bb483e-754d-4eac-b048-650e37ba8197" />
+Here is the proposed architecture with both Frequency Discern and T9 modules, as well as display options. See how the two large modules divide into each's own datapath and control. "Tone Found?" is a bit telling whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished. 
+<br/><br/>
+Since the Frequency Discern unit is not working, those following modules were only minimally explored. LEDs were used to display the detected current key. Below is a full diagram of the project at the lower abstraction level.
+<img width="1355" height="1289" alt="freqdisc drawio" src="https://github.com/user-attachments/assets/1c958aaa-be49-40c7-944e-1c06c0c39866" />
+
+
+The "Found Tone" is 4 bits representing the value of a key, following the diagram below:
 <img width="668" height="353" alt="keypad" src="https://github.com/user-attachments/assets/84f30301-74c1-4836-8ab7-8477e90b74b8" />
+
+
+
+
+
 
 
 \includegraphics[width=1\textwidth]{level1deep}
