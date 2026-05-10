@@ -4,18 +4,21 @@
 The objective is to build a portable and standards-compliant dual-tone multi-frequency (DTMF) listener and alpha-numeric T9-type text editor (or, at least, a numeric-only entry system like on a landline) in order to communicate by text through sound. This is also to practice building with documentational clarity, modularity, and with user-configuration in mind.
 
 <img width="520" height="266" alt="image" src="https://github.com/user-attachments/assets/da0e78fc-f273-4f3f-8e81-124df8ee4556" />
-High-level architecture of the DTMF detector.
+Figure 1. High-level architecture of the DTMF detector.
 <br/><br/>
 The Nexus Video's on-board DSP (digital signal processing) will be used in the calculations (repeated multiplication) required to discern the incoming DTMF, even if no "DSP" module is explicitly instantiated in the VHDL. The dotted lines are to say that at least one of these connected display devices would be integrated. A microphone will also be used, integrated as an analog audio source.
 
 #### Detailed Architecture and Sub-System Design
 
 <img width="2400" height="1800" alt="level1shallownew" src="https://github.com/user-attachments/assets/cdb858fc-d3f1-4cf9-8db3-0e8990dbc227" />
-Here is the proposed architecture with all planned modules (Frequency Discern, T9, and Display Logic). See how the two large modules divide into each's own datapath and control. "Tone Found?" is a bit expressing whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished, and since the Frequency Discern unit is not fully working, those following modules were passed over, and LEDs were implemented to display the current detected key.
+Figure 2. The proposed architecture with all planned modules (Frequency Discern, T9, and Display Logic) abstracted to datapath and control. See how the two large modules divide into each's own set of datapath and control. 
+
+<br/><br/>
+"Tone Found?" is a bit expressing whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished, and since the Frequency Discern unit is not fully working, those following modules were passed over, and LEDs were implemented to display the current detected key.
 <br/><br/>
 
-<img width="1355" height="1289" alt="freqdisc drawio (1)" src="https://github.com/user-attachments/assets/aa85b264-fb2c-49bd-ad23-2bc30620584c" />
-An updated and lower level diagram of the entire project.
+<img width="1488" height="1411" alt="freqdisc drawio" src="https://github.com/user-attachments/assets/7de9df4b-1573-492c-ba28-fd87b74fc757" />
+An updated, lower-level diagram of the entire project.
 
 The "Found Tone" is 4 bits representing the value of a key, following the diagram below:
 <img width="668" height="353" alt="keypad" src="https://github.com/user-attachments/assets/84f30301-74c1-4836-8ab7-8477e90b74b8" />
