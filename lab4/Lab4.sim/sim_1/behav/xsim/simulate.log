@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Note: Applying reset
+Time: 0 ps  Iteration: 0  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd
+Note: Test 1: Read base value from index 0
+Time: 15 ns  Iteration: 1  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd
+Note: Base read at index=0: actual = 32768, expected = 32768
+Time: 26 ns  Iteration: 0  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd
+Note: Test 2: Read next value from index 1
+Time: 26 ns  Iteration: 0  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd
+Note: Next read at index=0+1: actual = 33024, expected = 33024
+Time: 36 ns  Iteration: 0  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd
+Note: All tests passed.
+Time: 36 ns  Iteration: 0  Process: /LookupTable_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd

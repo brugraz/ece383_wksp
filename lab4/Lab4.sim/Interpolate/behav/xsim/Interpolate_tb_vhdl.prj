@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab4.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/Amplify.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/BaseAndNextReg.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/IndexOffsetReg.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/Interpolate.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_cu.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_dp.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/LookupTable.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/ResultReg.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ece383-lab4/Lab4.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/lab2_code_for_cadets/Audio_Codec_Wrapper.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/lab2_code_for_cadets/i2s_ctl.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/lab2_code_for_cadets/TWICtl.vhd" \
+"../../../../Lab4.srcs/sim_1/new/Interpolate_tb.vhd" \
+
+# Do not sort compile order
+nosort

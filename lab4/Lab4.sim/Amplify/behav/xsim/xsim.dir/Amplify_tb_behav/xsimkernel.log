@@ -1,0 +1,7 @@
+Running: xsim.dir/Amplify_tb_behav/xsimk.exe -simmode gui -wdb Amplify_tb_behav.wdb -simrunnum 0 -socket 61209
+Design successfully loaded
+Design Loading Memory Usage: 27020 KB (Peak: 27020 KB)
+Design Loading CPU Usage: 827 ms
+Simulation completed
+Simulation Memory Usage: 28616 KB (Peak: 28616 KB)
+Simulation CPU Usage: 889 ms

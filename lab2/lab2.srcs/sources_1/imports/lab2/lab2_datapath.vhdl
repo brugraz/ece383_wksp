@@ -135,11 +135,11 @@ constant stepper_time_delta       : integer := HASH_HORIZONTAL_SPACING;
 constant stepper_volt_init_val    : integer := CENTER_ROW;
 constant stepper_time_init_val    : integer := CENTER_COLUMN;
 
---attribute mark_debug : string;
---attribute keep       : string;
+attribute mark_debug : string;
+attribute keep       : string;
 
---attribute mark_debug of trigger : signal is "true";
---attribute keep       of trigger : signal is "true";
+attribute mark_debug of trigger : signal is "true";
+attribute keep       of trigger : signal is "true";
 
 --attribute mark_debug of write_address : signal is "true";
 --attribute keep       of write_address : signal is "true";

@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+Note: Offset 0.0: base = -200: next = 200: actual = -200
+Time: 10 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset ~1.0: base = -200: next = 200: actual = 198
+Time: 20 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.5: base = -200: next = 200: actual = 0
+Time: 30 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -200: next = 200: actual = -100
+Time: 40 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.75: base = -200: next = 200: actual = 100
+Time: 50 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -2495: next = -2197: actual = -2421
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: All Q8.8 signed interpolation tests passed!
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Interpolate_tb.vhd

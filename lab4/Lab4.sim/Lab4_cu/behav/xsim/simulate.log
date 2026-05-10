@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Note: Cycle 0: wait_ready_high cw = 00000
+Time: 5 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 0: wait_ready_high cw = 00000
+Time: 20 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 1: inc_phase cw = 10000
+Time: 30 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 2: get_base cw = 00000
+Time: 40 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 3: store_base cw = 00100
+Time: 50 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 4: get_next cw = 01000
+Time: 60 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 5: store_next cw = 01010
+Time: 70 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 6: store_result cw = 00001
+Time: 80 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd
+Note: Cycle 7: wait_ready_low cw = 00000
+Time: 90 ns  Iteration: 1  Process: /Lab4_cu_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_cu_tb.vhd

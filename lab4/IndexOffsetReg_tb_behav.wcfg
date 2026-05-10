@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="IndexOffsetReg_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="IndexOffsetReg_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="77.277 ns"></ZoomEndTime>
+      <Cursor1Time time="60.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/IndexOffsetReg_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/phase_inc" type="array">
+      <obj_property name="ElementShortName">phase_inc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_inc[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/index_offset" type="array">
+      <obj_property name="ElementShortName">index_offset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">index_offset[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/whole_bits" type="other">
+      <obj_property name="ElementShortName">whole_bits</obj_property>
+      <obj_property name="ObjectShortName">whole_bits</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/frac_bits" type="other">
+      <obj_property name="ElementShortName">frac_bits</obj_property>
+      <obj_property name="ObjectShortName">frac_bits</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/total_bits" type="other">
+      <obj_property name="ElementShortName">total_bits</obj_property>
+      <obj_property name="ObjectShortName">total_bits</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IndexOffsetReg_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

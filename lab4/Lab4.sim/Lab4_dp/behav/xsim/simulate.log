@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Note: Step 1: wait_ready_high
+Time: 10 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 2: inc_index_offset
+Time: 20 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 3: get_base
+Time: 30 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 4: store_base
+Time: 40 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 5: get_next
+Time: 50 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 6: store_next
+Time: 60 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 7: store_result
+Time: 70 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: Step 8: wait_ready_low
+Time: 80 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd
+Note: All tests passed successfully!
+Time: 90 ns  Iteration: 0  Process: /Lab4_dp_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Lab4_dp_tb.vhd

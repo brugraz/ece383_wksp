@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Note: Case 1: 1000 * 1 = 1000
+Time: 10 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 2: 1000 * -1 = -1000
+Time: 20 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 3: -1000 * 1 = -1000
+Time: 30 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 4: -1000 * -1 = 1000
+Time: 40 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 5: 10000 * 2 = 20000
+Time: 50 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 6: -10000 * 2 = -20000
+Time: 60 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 7: 10000 * -2 = -20000
+Time: 70 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: Case 8: 32767 * 2 = -2
+Time: 80 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd
+Note: All tests completed.
+Time: 80 ns  Iteration: 0  Process: /Amplify_tb/stimulus  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/Amplify_tb.vhd

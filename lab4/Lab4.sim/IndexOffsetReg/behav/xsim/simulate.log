@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Note: Cycle 1 = 546
+Time: 20 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd
+Note: Cycle 2 = 1092
+Time: 30 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd
+Note: Cycle 3 = 1638
+Time: 40 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd
+Note: Cycle 4 = 2184
+Time: 50 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd
+Note: Cycle 5 (hold) = 2184
+Time: 60 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd
+Note: IndexOffsetReg test complete.
+Time: 60 ns  Iteration: 1  Process: /IndexOffsetReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/IndexOffsetReg_tb.vhd

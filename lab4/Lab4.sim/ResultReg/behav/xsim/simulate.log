@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Note: Test 1: Reset
+Time: 0 ps  Iteration: 0  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: After reset: actual = 0
+Time: 10 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Test 2: Load value
+Time: 10 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Load x1234 << 2: actual = 18640
+Time: 20 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Test 3: Hold previous value
+Time: 20 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Should hold previous value: actual = 18640
+Time: 30 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Test 4: Load new value
+Time: 30 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: Load x00FF << 2: actual = 1020
+Time: 40 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd
+Note: All ResultReg tests passed!
+Time: 40 ns  Iteration: 1  Process: /ResultReg_tb/stim_proc  File: C:/383/ece383-lab4/Lab4.srcs/sim_1/new/ResultReg_tb.vhd

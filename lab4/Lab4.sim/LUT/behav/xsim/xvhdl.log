@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/Amplify.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Amplify'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/BaseAndNextReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BaseAndNextReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/IndexOffsetReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IndexOffsetReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/Interpolate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Interpolate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4_cu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_dp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4_dp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/LookupTable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LookupTable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/ResultReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ResultReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/Audio_Codec_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Audio_Codec_Wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/i2s_ctl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2s_ctl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/383/ece383-lab4/Lab4.srcs/sim_1/new/LookupTable_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LookupTable_tb'

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr  7 14:26:00 2026
+# Process ID         : 37088
+# Current directory  : C:/Users/C27Bruno.Graziano/ece383_wksp/lab4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent15608 C:\Users\C27Bruno.Graziano\ece383_wksp\lab4\Lab4.xpr
+# Log file           : C:/Users/C27Bruno.Graziano/ece383_wksp/lab4/vivado.log
+# Journal file       : C:/Users/C27Bruno.Graziano/ece383_wksp/lab4\vivado.jou
+# Running On         : C27-5CG31326ZG
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 9258 MB
+# Total Virtual      : 25701 MB
+# Available Virtual  : 5695 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Bruno.Graziano/ece383_wksp/lab4/Lab4.xpr
+close_project
+open_project C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/ublaze3.xpr
+open_bd_design {C:/Users/C27Bruno.Graziano/ece383_wksp/ublaze3/ublaze3.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Lab4_dp_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Lab4_dp_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="54.701 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/Lab4_dp_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/cw" type="array">
+      <obj_property name="ElementShortName">cw[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[4:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uninterpolated_out" type="array">
+      <obj_property name="ElementShortName">uninterpolated_out[17:0]</obj_property>
+      <obj_property name="ObjectShortName">uninterpolated_out[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/interpolated_out" type="array">
+      <obj_property name="ElementShortName">interpolated_out[17:0]</obj_property>
+      <obj_property name="ObjectShortName">interpolated_out[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/phase_inc" type="array">
+      <obj_property name="ElementShortName">phase_inc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_inc[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/Amplify_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/base_en" type="logic">
+      <obj_property name="ElementShortName">base_en</obj_property>
+      <obj_property name="ObjectShortName">base_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/next_en" type="logic">
+      <obj_property name="ElementShortName">next_en</obj_property>
+      <obj_property name="ObjectShortName">next_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/base_out" type="array">
+      <obj_property name="ElementShortName">base_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">base_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/next_out" type="array">
+      <obj_property name="ElementShortName">next_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">next_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/base_reg" type="array">
+      <obj_property name="ElementShortName">base_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">base_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/next_reg" type="array">
+      <obj_property name="ElementShortName">next_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">next_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/BaseAndNextReg_inst/data_size" type="other">
+      <obj_property name="ElementShortName">data_size</obj_property>
+      <obj_property name="ObjectShortName">data_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/IndexOffsetReg_inst/index_offset" type="array">
+      <obj_property name="ElementShortName">index_offset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">index_offset[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/IndexOffsetReg_inst/index_offset_reg" type="array">
+      <obj_property name="ElementShortName">index_offset_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">index_offset_reg[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/LookupTable_inst/index" type="array">
+      <obj_property name="ElementShortName">index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/LookupTable_inst/read_address" type="array">
+      <obj_property name="ElementShortName">read_address[9:0]</obj_property>
+      <obj_property name="ObjectShortName">read_address[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/LookupTable_inst/is_base" type="other">
+      <obj_property name="ElementShortName">is_base</obj_property>
+      <obj_property name="ObjectShortName">is_base</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab4_dp_tb/uut/LookupTable_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+</wave_config>
