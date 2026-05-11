@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h3 id="final-project-dual-tone-multi-frequency-detector-c2c-bruno-graziano-ece-383">Final Project: Dual-Tone Multi-Frequency Detector, C2C Bruno Graziano, ECE 383</h3>
+<h4 id="proposal">Proposal</h4>
+<p>The objective is to build a portable and standards-compliant dual-tone multi-frequency (DTMF) numeric detector in order to communicate by text through sound. Alpha-numeric detection was also considered via &quot;T9&quot; numpad entry. This is also to practice building with documentational clarity, modularity, known and real communication standards, and with user-configuration in mind.</p>
+<p><img src="image.png" alt="alt text">
+Figure 1. High-level architecture of the DTMF detector.
+<br/><br/>
+The Nexus Video's on-board DSP (digital signal processing) will be used in the calculations (repeated multiplication) required to discern the incoming DTMF, even if no &quot;DSP&quot; module is explicitly instantiated in the VHDL. The dotted lines are to say that at least one of these connected display devices would be integrated. A microphone will also be used, integrated as an analog audio source.</p>
+<h4 id="detailed-architecture-and-sub-system-design">Detailed Architecture and Sub-System Design</h4>
+<h5 id="level-0-design">Level-0 Design</h5>
+<p><img src="level1shallownew.png" alt="alt text">
+Figure 2. The proposed architecture with all planned modules (Frequency Discern, T9, and Display Logic) abstracted to datapath and control. The two main modules would have divided into each's own set of datapath and control.
+<br/><br/>
+&quot;Tone Found?&quot; is a bit expressing whether a DTMF tone (again, two specific frequencies) is currently being reliably detected from the audio input... or in short, whether someone is currently found to be pressing a key at all. The decision for what to implement for the display and efforts towards T9 alpha-numeric entry were to be deferred until after the Frequency Discern unit was finished, and since the Frequency Discern unit is not fully working, those following modules were passed over, and LEDs were implemented to display the current detected key.</p>
+<h5 id="datapath">Datapath</h5>
+<p><img src="freqdisc.drawio.png" alt="alt text">
+Figure 4. An updated, lower-level diagram of the entire project's completed datapath. The FSM is abstracted; its diagram will be shown later. Control and status bits are defined above to the right of the Audio Codec. The Audio Codec turns an analog AUX signal into an 18-bit signed value sampled at 48 kHz, which is an input (after having been truncated to 16 bits and treated as a fixed point Q15.1) to, inside the Frequency Discern unit, eight &quot;Goertzel Resonators,&quot; which are in place to determine correlation values between the heard sound signal and each tuned target frequency. &quot;found&quot; and &quot;key&quot; are the same things as &quot;Tone found?&quot; and &quot;Found tone&quot; from Figure 2 respectively.</p>
+<h5 id="fsm">FSM</h5>
+<p><img src="image-1.png" alt="alt text">
+Figure 9. FSM for Frequency Discern. The &quot;last address&quot; or end of window is n = 2063. The state of calculating power and resetting the window tells the Goertzel resonator units such through the control word, who then calculate this window's power result and then reset themselves (reset state variable s[n] to 0, s[n-1] = 0, s[n-2] = 0).</p>
+<h5 id="decision">Decision</h5>
+<p><img src="keypadrc.png" alt="alt text">
+&quot;key&quot; (the same thing as &quot;Found Tone&quot; from Figure 2) is 4 bits or one hex digit representing the value of a key, following the diagram below.</p>
+<h5 id="display-output">Display Output</h5>
+<p>LEDs were implemented as the output display to concurrently show which key was being detected. It would output 8-bit ASCII, or UTF8, allowing not only the digits but the #, *, and A B C D keys to be communicated without demanding special knowledge of the meaning of an LED pattern to someone unfamiliar with my project.</p>
+<h4 id="calculations-analysis-drawings">Calculations, Analysis, Drawings</h4>
+<h5 id="dtmf">DTMF</h5>
+<p><img src="keypad.png" alt="alt text">
+Figure 3. DTMF keypad model. DTMF started in 1963 under the trademark &quot;TouchTone&quot; by Bell Labs, and since has become an open standard everywhere. Keys include all digits, *, #, and A B C D on the right. That 4th column, uncommon to landlines and cell phones, is still used today by networking and amateur radio (Wikipedia). When one key is pressed on a DTMF pad, It plays a sound that is a sum of the row frequency and column frequency shown. For example is &quot;4&quot; was pressed, 770 Hz (the row &quot;4&quot; is in) and 1209 Hz (the column &quot;4&quot; is in) play at the same time; a sum of two pure sines. The reason the frequencies are odd values is so that none of them are harmonics (multiples) of each other, and also for voice processing and clarity reasons. The red hex enumerations on each key are there for the decision of the tone, and better explained in detail after having gone over the datapath.</p>
+<h5 id="datapath---goertzel">Datapath - Goertzel</h5>
+<p><img src="image-2.png" alt="alt text">
+Figure 5. Goertzel Resonator. The name is for the Goertzel algorithm, a recursive calculation of a state variable &quot;s&quot; or &quot;s[n]&quot; which adds the input signal x[n] to a predetermined coefficient 2cosω times the previous state value s[n-1] and subtracts s[n-2] from that. 2cosω is known beforehand because ω is the target frequency divided by the sampling frequency (it is like saying cos(2π<em>f</em>t) because time in sampling = nT, n being the sample index and T being the sampling period. &quot;n&quot; is not included in Goertzel's ω, so the result 2cosω only varies if the target frequency varies. Therefore there are eight coefficients to consider, available in our VHDL as generic constants (next figure). That state formula is like a differential equation in digital signal processing; a transfer function can be derived from it. If the target frequency is close to the frequency of x[n], then the state variable increases faster (it resonates more powerfully). The longer the window, the larger s gets. Our window (2064 samples, 43 ms) will produce a final (end of the window) s-value on the order of 10^3 when the signal and target frequencies match. It would be much larger if x[n] was not normalized to signed Q1.15. Final s is high when matching, low when not matching. To find correlation power values, following Figure 3, there are eight resonators because there are eight target frequencies - four lower on the rows, and four higher on the columns. All resonators work in parallel according to the single FSM. At every window's end (every 43 ms), the power will be calculated. The formula is seen in the figure. It gives the same result as (and is a rearranged version of) I^2 + Q^2, which stand for &quot;in-phase&quot; and &quot;quadrature&quot; (out of phase by 90 degrees), or in other words real^2 + imaginary^2. After calculating power in parallel, those values are compared to find the highest resonance out of the four row frequencies and the highest resonance out of the four column frequencies, which intersect over the key we conclude was heard.</p>
+<h5 id="more-on-goertzel-response--generic-definition">More on Goertzel Response &amp; Generic Definition</h5>
+<p><img src="rep3d.png" alt="alt text">
+<img src="resp3dbirdseye.png" alt="alt text">
+Figure 6. Final resonance state over both target and signal frequency. See how if the signal frequeny is the same as the target frequency, then the result is large and s grows fast. If they are different, it is small, so s would not grow big during the recursion window.</p>
+<p><img src="response.png" alt="alt text">
+Figure 7. Power response and how well the gain lobes are optimized to the exact DTMF frequencies. This response is specific to the fact that we sample at 48 kHz and our window is 2064 samples long. See f_target = 697 Hz and 1209 Hz: Them responding halfway down the lobe (in decibels) is to say that, since they fall down to the left, if a tone only 10 Hz higher were played as the input, the resonance would be more efficient than if the target frequency were played. This is not the entire response, given our above figures. It is only to say that our resonators would have a better or more efficient time detecting 941 Hz than they would detecting 697 Hz. Power over target frequency and signal frequency can also be considered.</p>
+<p><img src="image-4.png" alt="alt text">
+Figure 8. Coefficients defined in a package file. The frequencies are also defined integers, though their enumerations are just their frequency values, it is to prevent fat-fingering and to emphasize the constancy of the target frequencies for DTMF rather than whatever value someone wants. The lower target frequencies (like 697 Hz) result in a 2cosω = ~1.99, and the higher like 1633 Hz results in 2cosω = ~1.95.) They are defined in fixed point signed Q2.14, and called &quot;K&quot;. Generics are defined for the Goertzel resonator units as the integer frequencies for readability the needed coefficient is selected with a multiplexer in each unit using the frequency generic as the select value.</p>
+<h5 id="qq-math">Q.Q Math</h5>
+<p>The Goertzel resonator entity uses fixed point in all of its calculations:</p>
+<ul>
+<li>x[n] is signed Q1.16</li>
+<li>coefficient &quot;K&quot; (2cosω) is signed Q2.14</li>
+<li>s[n], s[n-1] and s[n-2] are all signed Q16.16</li>
+<li>In the VHDL, an intermediate signal containing the product of K and s[n-1], called Ks[n-1]_raw, is signed Q3.29.</li>
+<li>Shifting the above Ks[n-1]_raw right 14 bits and then resizing to 32 bits gives Ks[n-1] in Q16.16, which will be used in the recursive state formula.</li>
+<li>x[n] also needs to be adjusted to Q16.16 to be used in this formula, so it gets resized to 32 bits (with sign extension) and then left-shifted by one bit -&gt; x[n] in Q16.16.</li>
+</ul>
+<p>This allows:</p>
+<p><img src="image-5.png" alt="alt text"></p>
+<p>when &quot;s_prev&quot; and &quot;s_prev2&quot; mean s[n-1] and s[n-2] respectively. Next, power can be calculated as a Q32.32, three products of Q16.16 added (one of them subtracted):</p>
+<p><img src="image-6.png" alt="alt text"></p>
+<p>Q16.16 for the state value allows for growth of our order - 10^4 could be seen as a max with a generous pillow. 32 bits also can generously hold a power value on the order of 10^9. Rather than truncating such a value, to retain small values for testing of thresholds, I kept the output result a 64-bit word. Then the value will be compared with the 64-bit results from the other 7 resonator instantiations.</p>
+<h5 id="considerations-for-t9-entry">Considerations for &quot;T9&quot; Entry</h5>
+<p>Found in the following &quot;Functionality &amp; Requirements&quot; section, in A-level, is T9 entry. T9 is a user-level protocol that numpad-only devices like flip-phones use to express an alpha-numeric message. A batch of letters share a number, and a letter is arrived at by pressing the number one, two, three or four times depending on the letter.</p>
+<p>Such user entry was considered on this project - an FSM was started but not finished. Its drawing is below.
+<img src="image-7.png" alt="alt text"></p>
+<h4 id="updated-functionality--requirements">Updated Functionality &amp; Requirements</h4>
+<p>It will be required to discern incoming DTMF sounds for the user to be able to enter something into the system. That is what &quot;Find frequencies&quot; and &quot;User entry&quot; points mean below. Any display beyond the Bare Functionality can be done with the on-board OLED or on VGA.</p>
+<h5 id="required-or-bare-functionality">Required, or Bare Functionality</h5>
+<ul>
+<li>Find frequencies: Use Nexus Video on-board DSP to listen to and identify the sixteen DTMF keys by their tones coming as an audio input. Also discern when there is a break in a tone.</li>
+<li>User entry: Use the UART or LEDs to display the value.</li>
+</ul>
+<h5 id="b-functionality">'B' Functionality</h5>
+<ul>
+<li>Find frequencies: Same as required in bare functionality</li>
+<li>User entry: Allow key typing where each discerned number is appended to a displayed string (UART, OLED or VGA). Do not need to repeat keypresses while a key is held down.</li>
+</ul>
+<h5 id="a-functionality">'A' Functionality</h5>
+<ul>
+<li>Find frequencies: Same as required in bare functionality</li>
+<li>User entry: Use OLED or VGA. Add T9 style typing for a user to enter alpha-numeric messages. Add a navigation mode.</li>
+</ul>
+<p>T9: Be able to type numbers 0-9, *,  (that is, have a fully functional numeric-only mode). The outputs are (1) an 8-bit vector of ASCII for the current arrived key, with a special key like NULL (0x0) to say nothing is being typed and (2) one bit to denote when to move on to the next key. If a number is held, it shall repeat or spam like a computer keyboard does. # key shall act as a backspace</p>
+<h4 id="final-demonstration-and-test-results">Final Demonstration and Test Results</h4>
+<p>The demon
+turning into gradescope now
+will finish and send another way with this part done</p>
+<p>conclusion
+Factor in gain reponse for future design considerations.</p>
+<h4 id="appendix-running-the-project">Appendix: Running the Project</h4>
+<p>Since my project never worked, this would take some more contribution before anyone can see it operate. Plug in a microphone to &quot;Line In&quot; on the FPGA, turn the FPGA on, and of course have it programmed with this project's bitstream. I used the blue microphone in the 383 computer lab. If that's still there, use that. That one had a USB-C plug in, allowing me to power it with my laptop and play DTMF tones straight into it. I also had audio loop back to a speaker through &quot;Line Out&quot; on the Nexus Video, which helped a lot with testing, so that should be done too. A DTMF simulator can be found on the internet, and operation attempted by holding your phone to the microphone and playing tones or playing through your computer if you have the plug-in option for the microphone.</p>
+
+</body>
+</html>
