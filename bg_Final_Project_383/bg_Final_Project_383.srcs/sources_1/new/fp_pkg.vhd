@@ -26,15 +26,15 @@ constant Hz_1477 : integer := 1477;
 -- col 4: 1633 Hz -> 1.95448072706
 constant Hz_1633 : integer := 1633;
 
--- coefficients 2cos(2pi*f_targ/Fs) with Fs = 48kHz, for the 8 frequencies.
-constant K_Row1 : signed(15 downto 0) := x"7f77";
-constant K_Row2 : signed(15 downto 0) := x"7f59";
+-- coefficients 2cos(2pi*f_targ/Fs) with Fs = 48kHz, for the 8 frequencies.    
+constant K_Row1 : signed(15 downto 0) := x"7f78";
+constant K_Row2 : signed(15 downto 0) := x"7f5A";
 constant K_Row3 : signed(15 downto 0) := x"7f34";
-constant K_Row4 : signed(15 downto 0) := x"7f07";
+constant K_Row4 : signed(15 downto 0) := x"7f08";
 
-constant K_Col1 : signed(15 downto 0) := x"7e66";
+constant K_Col1 : signed(15 downto 0) := x"7e67";
 constant K_Col2 : signed(15 downto 0) := x"7e0c";
-constant K_Col3 : signed(15 downto 0) := x"7db5";
+constant K_Col3 : signed(15 downto 0) := x"7db6";
 constant K_Col4 : signed(15 downto 0) := x"7d16";
 
 -- detection hex ID ordering, naming them.

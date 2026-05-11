@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun May 10 04:22:13 2026
+| Date         : Sun May 10 18:06:39 2026
 | Host         : C27-5CG31326ZG running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file final_project_control_sets_placed.rpt
 | Design       : final_project
@@ -74,12 +74,12 @@ Table of Contents
 |                    Clock Signal                    |                             Enable Signal                             |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
 |  frequency_discern_inst/cw_reg[2]_i_1_n_0          |                                                                       |                                                              |                1 |              2 |         2.00 |
-|  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | reset_n_IBUF                                                          | Audio_Codec/initialize_audio/data_i[5]_i_1_n_0               |                1 |              4 |         4.00 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/FSM_gray_state[3]_i_1_n_0 |                                                              |                3 |              4 |         1.33 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/DONE_O_reg_0[0]           | Audio_Codec/audio_inout/SR[0]                                |                2 |              4 |         2.00 |
+|  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | reset_n_IBUF                                                          | Audio_Codec/initialize_audio/data_i[5]_i_1_n_0               |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG                                     |                                                                       | Audio_Codec/audio_inout/Cnt_Bclk[4]_i_1_n_0                  |                1 |              5 |         5.00 |
-|  clk_IBUF_BUFG                                     | frequency_discern_inst/window_counter/w_processQ[11]_i_2_n_0          | frequency_discern_inst/window_counter/p_0_in0                |                3 |              5 |         1.67 |
 |  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/BCLK_Fall_int                                 | Audio_Codec/audio_inout/SR[0]                                |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                     | frequency_discern_inst/window_counter/w_processQ[11]_i_2_n_0          | frequency_discern_inst/window_counter/p_0_in0                |                3 |              5 |         1.67 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | reset_n_IBUF                                                          |                                                              |                2 |              6 |         3.00 |
 |  clk_IBUF_BUFG                                     | frequency_discern_inst/window_counter/w_processQ13_out                | frequency_discern_inst/window_counter/w_processQ[10]_i_1_n_0 |                3 |              7 |         2.33 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                       | Audio_Codec/initialize_audio/twi_controller/busFreeCnt0_1    |                2 |              7 |         3.50 |
@@ -87,8 +87,8 @@ Table of Contents
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/sclCnt[6]_i_2_n_0         | Audio_Codec/initialize_audio/twi_controller/sclCnt0_0        |                2 |              7 |         3.50 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/dataByte[7]_i_1_n_0       |                                                              |                2 |              8 |         4.00 |
 |  clk_IBUF_BUFG                                     |                                                                       |                                                              |                6 |             10 |         1.67 |
-|  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/D_R_O_int[23]_i_1_n_0                         | Audio_Codec/audio_inout/SR[0]                                |                4 |             18 |         4.50 |
 |  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/D_L_O_int                                     | Audio_Codec/audio_inout/SR[0]                                |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/D_R_O_int[23]_i_1_n_0                         | Audio_Codec/audio_inout/SR[0]                                |                4 |             18 |         4.50 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                       |                                                              |                8 |             18 |         2.25 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/initWord[30]_i_1_n_0                     |                                                              |                5 |             18 |         3.60 |
 |  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/Data_Out_int[31]_i_1_n_0                      |                                                              |                8 |             19 |         2.38 |
